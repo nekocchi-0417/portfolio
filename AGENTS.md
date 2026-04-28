@@ -43,6 +43,8 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 
 **Keep this TODO list updated.** When you complete an item, move it to Done. When you discover a new gap, add it here before starting work.
 
+**Whenever you commit and push changes, update this `AGENTS.md` file in the same batch** so the remaining work, recovered assets, and completed items stay honest.
+
 ---
 
 ## TODO
