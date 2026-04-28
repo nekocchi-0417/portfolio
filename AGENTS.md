@@ -76,3 +76,4 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 - [x] Mobile project cards: titles/descriptions remain visible on touch devices instead of depending on hover
 - [x] About page: recovered HCI Lab promo video embed
 - [x] About page: recovered Project Relive x Relove image gallery
+- [x] Health-programmes phase pills now link to their corresponding case study sections

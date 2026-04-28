@@ -626,6 +626,7 @@ a {
 
 .cs-section {
   margin-bottom: 56px;
+  scroll-margin-top: 88px;
 }
 
 .cs-section h2 {
@@ -680,6 +681,8 @@ a {
   background: rgba(44, 38, 105, 0.06);
   padding: 10px 20px 10px 10px;
   border-radius: 40px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .cs-phase .num {
@@ -701,6 +704,11 @@ a {
   font-size: 14px;
   color: var(--navy);
   font-weight: 600;
+}
+
+.cs-phase:hover {
+  background: rgba(44, 38, 105, 0.1);
+  transform: translateY(-1px);
 }
 
 .finding-card {
