@@ -87,9 +87,7 @@ body {
   justify-content: center;
   gap: 40px;
   padding: 16px 24px;
-  background: rgba(245, 244, 255, 0.85);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(44, 38, 105, 0.06);
+  background: transparent;
 }
 
 .site-nav a {
@@ -432,6 +430,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .about-section {
@@ -471,13 +470,14 @@ body {
 
 .image-gallery img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto;
   display: block;
+  object-fit: contain;
+  background: rgba(255,255,255,0.6);
 }
 
 .image-gallery.wide img {
-  height: 240px;
+  max-height: 360px;
 }
 
 /* ─── CASE STUDY PAGES ─────────────────────────────── */
@@ -604,18 +604,27 @@ body {
   align-items: center;
   gap: 10px;
   background: rgba(44, 38, 105, 0.06);
-  padding: 12px 20px;
-  border-radius: 4px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 40px;
 }
 
 .cs-phase .num {
   font-family: 'Merchant', serif;
-  font-size: 22px;
-  color: var(--orange);
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background: var(--orange);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.cs-phase span {
-  font-size: 15px;
+.cs-phase span:last-child {
+  font-size: 14px;
   color: var(--navy);
   font-weight: 600;
 }
@@ -666,8 +675,7 @@ body {
 
 .cs-image-grid img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
