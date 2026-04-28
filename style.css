@@ -1,0 +1,822 @@
+@font-face {
+  font-family: 'Merchant';
+  src: url('https://uxfolio-prod.s3.us-east-1.amazonaws.com/fonts/Merchant-Bold_KkR.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Merchant';
+  src: url('https://uxfolio-prod.s3.us-east-1.amazonaws.com/fonts/Merchant-Medium_hMk.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Merchant';
+  src: url('https://uxfolio-prod.s3.us-east-1.amazonaws.com/fonts/Merchant-Regular_BnN.otf') format('opentype');
+  font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #2c2669;
+  --orange: #FA8006;
+  --muted: #817D93;
+  --bg: #F5F4FF;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg);
+  background-image: url('https://uxfol.io/hero-images/template17-hero-image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--navy);
+  min-height: 100vh;
+}
+
+/* ─── HERO ─────────────────────────────────────────── */
+.hero {
+  text-align: center;
+  padding: 80px 24px 48px;
+}
+
+.hero h1 {
+  font-family: 'Merchant', serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1.1;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.hero h1 .name {
+  color: var(--orange);
+}
+
+.hero .subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.hero .subtitle strong {
+  font-weight: 700;
+  color: var(--muted);
+}
+
+/* ─── NAV ──────────────────────────────────────────── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 16px 24px;
+  background: rgba(245, 244, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(44, 38, 105, 0.06);
+}
+
+.site-nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--navy);
+  border-bottom-color: var(--navy);
+}
+
+/* ─── MAIN CONTENT ─────────────────────────────────── */
+.page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+/* ─── SECTION TITLES ───────────────────────────────── */
+.section-title {
+  font-family: 'Merchant', serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: var(--navy);
+  margin-bottom: 28px;
+}
+
+/* ─── WORK EXPERIENCES ─────────────────────────────── */
+.work-experiences ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.work-experiences li {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.work-experiences li strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.linkedin-btn {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.linkedin-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* ─── LATEST PROJECTS ──────────────────────────────── */
+.projects-section {
+  margin-top: 72px;
+}
+
+.projects-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.projects-heading h2 {
+  font-family: 'Merchant', serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+.projects-heading::before,
+.projects-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(44, 38, 105, 0.2);
+}
+
+/* ─── PROJECT GRID ─────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.project-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  min-height: 300px;
+}
+
+.project-card.full-width img {
+  min-height: 420px;
+}
+
+.project-card:hover img {
+  transform: scale(1.03);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 38, 105, 0.72);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h3 {
+  font-family: 'Merchant', serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.card-overlay p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  max-width: 460px;
+}
+
+/* ─── FOOTER NAV ───────────────────────────────────── */
+.footer-nav {
+  display: flex;
+  gap: 32px;
+  padding: 32px 24px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: var(--navy);
+}
+
+/* ─── SKILLS PAGE ──────────────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-bottom: 72px;
+}
+
+.skill-card .skill-number {
+  font-family: 'Merchant', serif;
+  font-size: 32px;
+  color: var(--navy);
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.skill-card h3 {
+  font-family: 'Merchant', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.skill-card ul {
+  list-style: disc;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-card li {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.skill-card li strong {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.skills-sidetrack {
+  border-top: 1px solid rgba(44, 38, 105, 0.12);
+  padding-top: 56px;
+}
+
+.skills-sidetrack h2 {
+  font-family: 'Merchant', serif;
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.skills-sidetrack blockquote {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--muted);
+  border-left: 3px solid var(--orange);
+  padding-left: 20px;
+  margin: 24px 0;
+  line-height: 1.6;
+}
+
+.skills-sidetrack p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.skills-sidetrack h3 {
+  font-family: 'Merchant', serif;
+  font-size: 28px;
+  color: var(--navy);
+  margin: 40px 0 16px;
+}
+
+.view-case-study {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--orange);
+  text-decoration: none;
+  border-bottom: 1px solid var(--orange);
+  padding-bottom: 2px;
+  margin-top: 8px;
+  transition: opacity 0.2s;
+}
+
+.view-case-study:hover {
+  opacity: 0.7;
+}
+
+/* ─── ABOUT PAGE ───────────────────────────────────── */
+.about-intro {
+  margin-bottom: 60px;
+}
+
+.about-intro h2 {
+  font-family: 'Merchant', serif;
+  font-size: 42px;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.about-intro p {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.about-intro .highlight-q {
+  font-size: 22px;
+  font-style: italic;
+  color: var(--navy);
+  font-family: 'Merchant', serif;
+  border-left: 3px solid var(--orange);
+  padding-left: 20px;
+  margin: 32px 0;
+  line-height: 1.4;
+}
+
+.about-hobbies h3 {
+  font-family: 'Merchant', serif;
+  font-size: 28px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.about-hobbies p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.books-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-section {
+  margin-top: 60px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(44, 38, 105, 0.12);
+}
+
+.about-section h2 {
+  font-family: 'Merchant', serif;
+  font-size: 32px;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  max-width: 700px;
+}
+
+.about-section h3 {
+  font-family: 'Merchant', serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin: 32px 0 12px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-gallery.wide img {
+  height: 240px;
+}
+
+/* ─── CASE STUDY PAGES ─────────────────────────────── */
+.cs-nav-back {
+  padding: 20px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cs-nav-back a {
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.cs-nav-back a:hover { color: var(--navy); }
+
+.cs-header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+
+.cs-header h1 {
+  font-family: 'Merchant', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.cs-header .cs-subtitle {
+  font-size: 20px;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.cs-meta {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.cs-meta-item label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.cs-meta-item p {
+  font-size: 15px;
+  color: var(--navy);
+  line-height: 1.5;
+  max-width: 220px;
+}
+
+.cs-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+.cs-section {
+  margin-bottom: 56px;
+}
+
+.cs-section h2 {
+  font-family: 'Merchant', serif;
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.cs-section h3 {
+  font-family: 'Merchant', serif;
+  font-size: 24px;
+  color: var(--navy);
+  margin: 32px 0 14px;
+}
+
+.cs-section p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.cs-section ul, .cs-section ol {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+.cs-section li {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.cs-section li strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.cs-phases {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.cs-phase {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(44, 38, 105, 0.06);
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+.cs-phase .num {
+  font-family: 'Merchant', serif;
+  font-size: 22px;
+  color: var(--orange);
+}
+
+.cs-phase span {
+  font-size: 15px;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.finding-card {
+  background: rgba(44, 38, 105, 0.04);
+  border-left: 4px solid var(--orange);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.finding-card .finding-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+
+.finding-card h4 {
+  font-family: 'Merchant', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.finding-card p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.cs-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 24px 0;
+}
+
+.cs-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.cs-image-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.cs-impact {
+  background: rgba(44, 38, 105, 0.04);
+  padding: 32px;
+  margin: 32px 0;
+}
+
+.cs-impact h3 {
+  font-family: 'Merchant', serif;
+  font-size: 28px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.cs-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.cs-impact-item {
+  text-align: center;
+}
+
+.cs-impact-item .impact-num {
+  font-family: 'Merchant', serif;
+  font-size: 36px;
+  color: var(--orange);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cs-impact-item p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.cs-learnings {
+  margin-top: 48px;
+}
+
+.cs-learnings h2 {
+  font-family: 'Merchant', serif;
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.cs-learnings ol {
+  padding-left: 22px;
+}
+
+.cs-learnings li {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.cs-end {
+  text-align: center;
+  padding: 48px 0;
+  border-top: 1px solid rgba(44, 38, 105, 0.12);
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 48px;
+}
+
+/* ─── MORE PROJECTS ─────────────────────────────────── */
+.more-projects {
+  margin-top: 64px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(44, 38, 105, 0.12);
+}
+
+.more-projects h2 {
+  font-family: 'Merchant', serif;
+  font-size: 32px;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.more-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.more-project-card {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+}
+
+.more-project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.more-project-card:hover img {
+  transform: scale(1.03);
+}
+
+.more-project-card .more-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 38, 105, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.more-project-card:hover .more-card-overlay {
+  opacity: 1;
+}
+
+.more-card-overlay h3 {
+  font-family: 'Merchant', serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.more-card-overlay p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.4;
+}
+
+/* ─── RESPONSIVE ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 48px; }
+  .hero .subtitle { font-size: 17px; }
+  .site-nav { gap: 20px; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card.full-width { grid-column: 1; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .cs-meta { flex-direction: column; gap: 20px; }
+  .cs-header h1 { font-size: 36px; }
+  .cs-impact-grid { grid-template-columns: repeat(2, 1fr); }
+}
