@@ -45,6 +45,14 @@ body {
   min-height: 100vh;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
 /* ─── HERO ─────────────────────────────────────────── */
 .hero {
   text-align: center;
@@ -84,6 +92,7 @@ body {
   top: 0;
   z-index: 100;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 16px 24px;
@@ -261,6 +270,7 @@ body {
 /* ─── FOOTER NAV ───────────────────────────────────── */
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   padding: 32px 24px 40px;
   max-width: 900px;
@@ -374,6 +384,38 @@ body {
   opacity: 0.7;
 }
 
+.skills-orchestrator {
+  margin-bottom: 52px;
+}
+
+.skills-orchestrator p:first-child {
+  font-family: 'Merchant', serif;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.skills-orchestrator p:last-child {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+.skills-explainer {
+  list-style: disc;
+  padding-left: 22px;
+  margin-bottom: 18px;
+}
+
+.skills-explainer li {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
 /* ─── ABOUT PAGE ───────────────────────────────────── */
 .about-intro {
   margin-bottom: 60px;
@@ -417,6 +459,12 @@ body {
   color: var(--muted);
   line-height: 1.8;
   margin-bottom: 16px;
+}
+
+.about-photo-caption {
+  font-size: 18px;
+  color: var(--navy);
+  margin: 8px 0 4px;
 }
 
 .books-grid {
@@ -478,6 +526,32 @@ body {
 
 .image-gallery.wide img {
   max-height: 360px;
+}
+
+.about-video {
+  margin-top: 28px;
+}
+
+.about-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+  background: rgba(44, 38, 105, 0.08);
+}
+
+.about-video p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+.relive-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.relive-gallery img {
+  background: transparent;
 }
 
 /* ─── CASE STUDY PAGES ─────────────────────────────── */
@@ -816,15 +890,158 @@ body {
   line-height: 1.4;
 }
 
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-ready.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ─── RESPONSIVE ───────────────────────────────────── */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 48px; }
-  .hero .subtitle { font-size: 17px; }
-  .site-nav { gap: 20px; }
+  .hero {
+    padding: 56px 20px 36px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    line-height: 1.05;
+  }
+  .hero .subtitle {
+    font-size: 17px;
+    max-width: 420px;
+  }
+  .site-nav {
+    gap: 14px 24px;
+    padding: 12px 20px;
+  }
+  .page-content {
+    padding: 44px 20px 72px;
+  }
+  .section-title,
+  .about-intro h2,
+  .projects-heading h2,
+  .skills-sidetrack h2,
+  .cs-section h2,
+  .cs-learnings h2 {
+    font-size: 34px;
+  }
+  .projects-heading {
+    gap: 14px;
+    margin-bottom: 28px;
+  }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.full-width { grid-column: 1; }
+  .project-card img { min-height: 240px; }
+  .project-card.full-width img { min-height: 280px; }
+  .card-overlay,
+  .more-project-card .more-card-overlay {
+    position: static;
+    opacity: 1;
+    background: rgba(44, 38, 105, 0.05);
+    padding: 18px 18px 22px;
+  }
+  .card-overlay h3,
+  .more-card-overlay h3 {
+    color: var(--navy);
+  }
+  .card-overlay p,
+  .more-card-overlay p {
+    color: var(--muted);
+  }
+  .project-card:hover img,
+  .more-project-card:hover img {
+    transform: none;
+  }
   .skills-grid { grid-template-columns: 1fr; }
+  .skills-orchestrator {
+    margin-bottom: 44px;
+  }
+  .skills-orchestrator p:first-child {
+    font-size: 22px;
+  }
+  .skills-orchestrator p:last-child {
+    font-size: 16px;
+  }
+  .skills-sidetrack h3,
+  .about-hobbies h3,
+  .cs-section h3,
+  .cs-impact h3 {
+    font-size: 24px;
+  }
+  .about-intro p,
+  .about-section p,
+  .cs-section p,
+  .cs-section li,
+  .about-hobbies p,
+  .skill-card li,
+  .skills-sidetrack p {
+    font-size: 15px;
+  }
+  .about-intro .highlight-q {
+    font-size: 20px;
+    padding-left: 16px;
+  }
+  .image-gallery,
+  .cs-image-grid,
+  .more-projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .relive-gallery {
+    grid-template-columns: 1fr;
+  }
   .cs-meta { flex-direction: column; gap: 20px; }
   .cs-header h1 { font-size: 36px; }
+  .cs-header .cs-subtitle { font-size: 18px; }
+  .cs-body,
+  .cs-header,
+  .cs-nav-back {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cs-phase {
+    width: 100%;
+  }
   .cs-impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-nav {
+    gap: 12px 24px;
+    padding: 28px 20px 36px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+  .projects-heading h2,
+  .section-title,
+  .about-intro h2,
+  .skills-sidetrack h2,
+  .cs-section h2,
+  .cs-learnings h2 {
+    font-size: 30px;
+  }
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-photo-caption {
+    font-size: 16px;
+  }
+  .cs-header h1 {
+    font-size: 32px;
+  }
+  .cs-impact-grid {
+    grid-template-columns: 1fr;
+  }
+  .reveal-ready {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
