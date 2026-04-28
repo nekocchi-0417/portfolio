@@ -80,3 +80,4 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 - [x] About page: recovered HCI Lab promo video embed
 - [x] About page: recovered Project Relive x Relove image gallery
 - [x] Health-programmes phase pills now link to their corresponding case study sections
+- [x] Future-of-work phase pills now link to their corresponding case study sections
