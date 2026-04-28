@@ -60,6 +60,7 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 - [ ] **Active nav state on case study pages** — case study pages don't highlight any nav item as "active" (they live under `projects/`). Consider whether this matters.
 - [ ] **Responsive pass** — check all pages at mobile widths (375px, 390px). Image grids, phase bubbles, and hero text have basic responsive rules but haven't been thoroughly QA'd on small screens. Mobile hover states for project cards are now handled, but the full-page QA pass is still not complete.
 - [ ] **Self-host fonts and images** — currently fonts load from UXfolio's S3 CDN and images point to UXfolio's S3 bucket. If UXfolio ever takes those down the site breaks. Owner may eventually want to copy assets into the repo.
+- [ ] **Desktop comparison pass** — continue tightening image sizing and spacing in wide layouts where recovered static galleries still feel larger than the original UXfolio presentation.
 
 ---
 
