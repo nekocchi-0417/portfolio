@@ -202,7 +202,7 @@ a {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 28px 24px;
 }
 
 .project-card {
@@ -211,10 +211,12 @@ a {
   cursor: pointer;
   display: block;
   text-decoration: none;
+  aspect-ratio: 1 / 0.94;
 }
 
 .project-card.full-width {
   grid-column: 1 / -1;
+  aspect-ratio: 2.08 / 1;
 }
 
 .project-card img {
@@ -223,11 +225,6 @@ a {
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
-  min-height: 300px;
-}
-
-.project-card.full-width img {
-  min-height: 420px;
 }
 
 .project-card:hover img {
@@ -626,6 +623,85 @@ a {
   max-width: 220px;
 }
 
+/* ─── CS HERO GRID (title left, image right) ───────── */
+.cs-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cs-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* ─── PROBLEM / SOLUTION 2-COLUMN ─────────────────── */
+.cs-prob-sol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 56px;
+}
+
+/* ─── SECTION WITH SIDE IMAGE ───────────────────────  */
+.cs-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 56px;
+  scroll-margin-top: 88px;
+}
+
+.cs-col-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.cs-col-text h2 {
+  font-family: 'Merchant', serif;
+  font-size: 36px;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.cs-col-text h3 {
+  font-family: 'Merchant', serif;
+  font-size: 24px;
+  color: var(--navy);
+  margin: 28px 0 12px;
+}
+
+.cs-col-text p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.cs-col-text ul,
+.cs-col-text ol {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+.cs-col-text li {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.cs-col-text li strong {
+  color: var(--navy);
+}
+
 .cs-body {
   max-width: 900px;
   margin: 0 auto;
@@ -677,46 +753,68 @@ a {
 
 .cs-phases {
   display: flex;
-  gap: 12px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 48px;
 }
 
 .cs-phase {
+  flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  background: rgba(44, 38, 105, 0.06);
-  padding: 10px 20px 10px 10px;
-  border-radius: 40px;
+  gap: 12px;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+  position: relative;
+  padding: 0 4px;
 }
 
+/* connecting lines between circles */
+.cs-phase::before,
+.cs-phase::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  height: 1px;
+  background: rgba(213, 211, 231, 0.9);
+  z-index: 0;
+}
+.cs-phase::before { left: 0; right: calc(50% + 22px); }
+.cs-phase::after  { left: calc(50% + 22px); right: 0; }
+.cs-phase:first-child::before,
+.cs-phase:last-child::after { display: none; }
+
 .cs-phase .num {
-  font-family: 'Merchant', serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: white;
-  background: var(--orange);
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  border: 1.5px solid rgba(213, 211, 231, 0.9);
+  background: var(--bg);
+  color: var(--navy);
+  font-family: 'Merchant', serif;
+  font-size: 18px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .cs-phase span:last-child {
-  font-size: 14px;
-  color: var(--navy);
-  font-weight: 600;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 120px;
 }
 
-.cs-phase:hover {
-  background: rgba(44, 38, 105, 0.1);
-  transform: translateY(-1px);
+.cs-phase:hover .num {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: white;
 }
 
 .finding-card {
@@ -954,8 +1052,9 @@ a {
   }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.full-width { grid-column: 1; }
-  .project-card img { min-height: 240px; }
-  .project-card.full-width img { min-height: 280px; }
+  .project-card {
+    aspect-ratio: auto;
+  }
   .card-overlay,
   .more-project-card .more-card-overlay {
     position: static;
@@ -1013,6 +1112,11 @@ a {
     grid-template-columns: 1fr;
   }
   .cs-meta { flex-direction: column; gap: 20px; }
+  .cs-hero-grid,
+  .cs-prob-sol,
+  .cs-2col {
+    grid-template-columns: 1fr;
+  }
   .cs-header h1 { font-size: 36px; }
   .cs-header .cs-subtitle { font-size: 18px; }
   .cs-body,
@@ -1021,9 +1125,16 @@ a {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .cs-phase {
-    width: 100%;
+  .cs-phases {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 0;
   }
+  .cs-phase {
+    flex: 0 0 50%;
+  }
+  .cs-phase::before,
+  .cs-phase::after { display: none; }
   .cs-impact-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-nav {
     gap: 12px 24px;

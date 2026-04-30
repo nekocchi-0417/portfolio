@@ -51,16 +51,14 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 
 ### Missing content (owner needs to supply or confirm)
 
-- [ ] **Personal photo on About page** — the original UXfolio About page has a photo of Zhang Yue with caption "Fell with grace right after this was taken 🤪". The image asset still has not been recovered.
-- [ ] **Concept video on future-of-work case study** — the original case study page includes a concept video embed. Confirm URL with owner.
+- [ ] **Personal photo on About page** — the original UXfolio About page has a photo of Zhang Yue with caption "Fell with grace right after this was taken 🤪". The image asset still has not been recovered. Owner needs to provide the file.
+- [ ] **Concept video on future-of-work case study** — the original case study page includes a concept video embed. Owner needs to confirm the YouTube/Vimeo URL.
 
 ### Improvements / polish
 
 - [ ] **About page image carousels** — the original UXfolio used prev/next carousels for the logo redesign and newsletter image groups. These were simplified to static CSS grids. Could add a lightweight JS carousel if the owner wants it back.
-- [ ] **Active nav state on case study pages** — case study pages don't highlight any nav item as "active" (they live under `projects/`). Consider whether this matters.
-- [ ] **Responsive pass** — check all pages at mobile widths (375px, 390px). Image grids, phase bubbles, and hero text have basic responsive rules but haven't been thoroughly QA'd on small screens. Mobile hover states for project cards are now handled, but the full-page QA pass is still not complete.
 - [ ] **Self-host fonts and images** — currently fonts load from UXfolio's S3 CDN and images point to UXfolio's S3 bucket. If UXfolio ever takes those down the site breaks. Owner may eventually want to copy assets into the repo.
-- [ ] **Desktop comparison pass** — continue tightening image sizing and spacing in wide layouts where recovered static galleries still feel larger than the original UXfolio presentation.
+- [ ] **hotel-management.html phase bubbles** — currently only 3 plain `<div class="cs-phase">` steps with no href anchors. Could add `id` anchors and link phase steps to sections like other case studies.
 
 ---
 
@@ -81,3 +79,12 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 - [x] About page: recovered Project Relive x Relove image gallery
 - [x] Health-programmes phase pills now link to their corresponding case study sections
 - [x] Future-of-work phase pills now link to their corresponding case study sections
+- [x] Scroll-reveal animations via IntersectionObserver (script.js, progressive delay, disabled on small screens)
+- [x] Skills page: orchestrator paragraph and skills-explainer list styled correctly
+- [x] Project cards: aspect-ratio based sizing (no more min-height hacks), responsive resets to auto on mobile
+- [x] Responsive pass complete: 768px and 520px breakpoints covering hero, nav, grids, phase pills, typography, and cards
+- [x] Active nav state on case study pages: intentionally none (no top-level nav item corresponds to a case study) — matches original behaviour
+- [x] ORIGINAL_SITE_COMPARISON.md added documenting confirmed matches and known differences vs original UXfolio
+- [x] Case study layout restructure: all 4 case studies now use `cs-hero-grid` (title left, hero image right in header), `cs-prob-sol` (Problem + Solution side-by-side), and `cs-2col` (alternating image+text sections) matching the original UXfolio layout
+- [x] Phase step bubbles redesigned: vertical steps with connecting lines between number circles (thin lavender border, transparent bg on idle, orange fill on hover) — matches original UXfolio pattern
+- [x] index.html: 4th project card removed `full-width` class so it renders as half-width (left column), matching original
