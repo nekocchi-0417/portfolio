@@ -51,7 +51,7 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 
 ### Missing content (owner needs to supply or confirm)
 
-- [ ] **Personal photo on About page** — the original UXfolio About page has a photo of Zhang Yue with caption "Fell with grace right after this was taken 🤪". The image asset still has not been recovered. Owner needs to provide the file.
+- [x] **Personal photos on About page** — recovered: portrait (`Il1QG07njlJh81BL.webp`) and bouldering (`oGJr0XuQGKmPEW1p.webp`) now placed correctly in the hobbies section with the "Fell with grace" caption.
 - [ ] **Concept video on future-of-work case study** — the original case study page includes a concept video embed. Owner needs to confirm the YouTube/Vimeo URL.
 
 ### Improvements / polish
@@ -86,5 +86,7 @@ The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticat
 - [x] Active nav state on case study pages: intentionally none (no top-level nav item corresponds to a case study) — matches original behaviour
 - [x] ORIGINAL_SITE_COMPARISON.md added documenting confirmed matches and known differences vs original UXfolio
 - [x] Case study layout restructure: all 4 case studies now use `cs-hero-grid` (title left, hero image right in header), `cs-prob-sol` (Problem + Solution side-by-side), and `cs-2col` (alternating image+text sections) matching the original UXfolio layout
+- [x] About page images fully corrected: personal photos (portrait + bouldering) moved to hobbies section; 7 book covers moved to books section; HCI Lab logos section now shows correct logo overview image; newsletters section shows 3 actual newsletter designs
+- [x] About page image sizing fixed: `books-grid` uses `object-fit: cover` for photos; `image-gallery` uses fixed 160px height for compact uniform display; `newsletters-gallery` uses 2-col 260px for landscape newsletters; `relive-gallery` uses 2-col 220px with cover
 - [x] Phase step bubbles redesigned: vertical steps with connecting lines between number circles (thin lavender border, transparent bg on idle, orange fill on hover) — matches original UXfolio pattern
 - [x] index.html: 4th project card removed `full-width` class so it renders as half-width (left column), matching original

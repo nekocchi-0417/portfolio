@@ -473,11 +473,9 @@ a {
 
 .books-grid img {
   width: 100%;
-  height: auto;
+  height: 280px;
   display: block;
-  object-fit: contain;
-  max-height: 340px;
-  margin: 0 auto;
+  object-fit: cover;
 }
 
 .about-section {
@@ -510,23 +508,26 @@ a {
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 10px;
   margin: 20px 0;
 }
 
 .image-gallery img {
   width: 100%;
-  height: auto;
+  height: 160px;
   display: block;
   object-fit: contain;
   background: rgba(255,255,255,0.6);
-  max-height: 300px;
-  margin: 0 auto;
 }
 
-.image-gallery.wide img {
-  max-height: 360px;
+.newsletters-gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.newsletters-gallery img {
+  height: 260px;
+  background: rgba(255,255,255,0.4);
 }
 
 .about-video {
@@ -551,12 +552,13 @@ a {
 }
 
 .relive-gallery {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .relive-gallery img {
+  height: 220px;
+  object-fit: cover;
   background: transparent;
-  max-height: 240px;
 }
 
 /* ─── CASE STUDY PAGES ─────────────────────────────── */
@@ -1104,6 +1106,7 @@ a {
     padding-left: 16px;
   }
   .image-gallery,
+  .newsletters-gallery,
   .cs-image-grid,
   .more-projects-grid {
     grid-template-columns: 1fr;
@@ -1158,9 +1161,13 @@ a {
     grid-template-columns: 1fr;
   }
   .books-grid img,
-  .image-gallery img,
+  .image-gallery img {
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+  }
   .relive-gallery img {
-    max-height: none;
+    height: 180px;
   }
   .about-photo-caption {
     font-size: 16px;
