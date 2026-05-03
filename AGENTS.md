@@ -26,7 +26,7 @@ portfolio/
 
 ## Design
 
-- Font: **Merchant** (Bold/Medium/Regular) loaded from the original UXfolio S3 CDN, plus **Open Sans** via Google Fonts
+- Font: **Merchant** (Bold/Medium/Regular) self-hosted under `assets/fonts/`, plus **Open Sans** via Google Fonts
 - Palette: `--navy: #2c2669`, `--orange: #FA8006`, `--muted: #817D93`, `--bg: #F5F4FF`
 - Background: CSS radial-gradient blobs approximating the original UXfolio template background
 - All images are referenced directly from the original UXfolio S3 bucket (`uxfolio-prod.s3.us-east-1.amazonaws.com`)
@@ -112,7 +112,7 @@ All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e04197
 ### Improvements / polish
 
 - [ ] **About page image carousels** — the original UXfolio used prev/next carousels for the logo redesign and newsletter image groups. These were simplified to static CSS grids. Could add a lightweight JS carousel if the owner wants it back.
-- [ ] **Self-host fonts and images** — currently fonts load from UXfolio's S3 CDN and images point to UXfolio's S3 bucket. If UXfolio ever takes those down the site breaks. Owner may eventually want to copy assets into the repo.
+- [ ] **Self-host images** — images still point to UXfolio's S3 bucket. If UXfolio ever takes those down the image-heavy pages (about, all case studies) break. Fonts are now self-hosted; images are the larger remaining migration.
 
 ---
 
@@ -145,3 +145,4 @@ All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e04197
 - [x] Phase step bubbles redesigned: vertical steps with connecting lines between number circles (thin lavender border, transparent bg on idle, orange fill on hover) — matches original UXfolio pattern
 - [x] index.html: 4th project card removed `full-width` class so it renders as half-width (left column), matching original
 - [x] Hotel-management phase pills now link to their corresponding case study sections (User research → Understanding the Users, Usability Evaluation & Wireframing → Wireframes, The Pitch → pitch & feedback)
+- [x] Self-hosted Merchant fonts under `assets/fonts/` (Bold/Medium/Regular); CSS @font-face rules now reference local paths and use `font-display: swap` for faster first paint. Removes one external dependency on the UXfolio S3 CDN.
