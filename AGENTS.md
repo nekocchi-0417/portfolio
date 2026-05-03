@@ -113,7 +113,6 @@ All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e04197
 
 - [ ] **About page image carousels** — the original UXfolio used prev/next carousels for the logo redesign and newsletter image groups. These were simplified to static CSS grids. Could add a lightweight JS carousel if the owner wants it back.
 - [ ] **Self-host fonts and images** — currently fonts load from UXfolio's S3 CDN and images point to UXfolio's S3 bucket. If UXfolio ever takes those down the site breaks. Owner may eventually want to copy assets into the repo.
-- [ ] **hotel-management.html phase bubbles** — currently only 3 plain `<div class="cs-phase">` steps with no href anchors. Could add `id` anchors and link phase steps to sections like other case studies.
 
 ---
 
@@ -145,3 +144,4 @@ All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e04197
 - [x] About page image sizing fixed: `books-grid` uses `object-fit: cover` for photos; `image-gallery` uses fixed 160px height for compact uniform display; `newsletters-gallery` uses 2-col 260px for landscape newsletters; `relive-gallery` uses 2-col 220px with cover
 - [x] Phase step bubbles redesigned: vertical steps with connecting lines between number circles (thin lavender border, transparent bg on idle, orange fill on hover) — matches original UXfolio pattern
 - [x] index.html: 4th project card removed `full-width` class so it renders as half-width (left column), matching original
+- [x] Hotel-management phase pills now link to their corresponding case study sections (User research → Understanding the Users, Usability Evaluation & Wireframing → Wireframes, The Pitch → pitch & feedback)
