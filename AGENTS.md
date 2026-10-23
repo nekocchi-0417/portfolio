@@ -21,6 +21,7 @@ In the introduction, both “keeping human agency as AI becomes more capable” 
 - GitHub Pages deploys `main` from the repository root. No build step or new deployment infrastructure is needed.
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
 - `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
+- The visual-design page’s intro is “I like making ideas clearer through design.”
 - `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Includes brief notes and verified local covers. Reuses `design.css` for base styling.
 - `apps.html` / `apps.css`: six public web apps, with verified demo / prototype links where available and public source links. Reuses `design.css` for base styling and links back to Outside work. The homepage retains `#projects` on the hobby paragraph so older fragment links still reach the new subpage link.
 - `visualising.html`: immediate redirect and fallback link to `apps.html`, preserving the previously published URL. Its canonical URL points to the apps page. `visualising.css` was removed.
