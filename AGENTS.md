@@ -7,7 +7,7 @@
 The owner asked for a much simpler personal site. The homepage has two main parts:
 
 1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
-2. Outside work: a few lines about hobbies. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “building small web apps” links to `apps.html`, a directory of six verified public apps.
+2. Outside work: a few lines about hobbies. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “small web apps” links to `apps.html`, a directory of six verified public apps. The final sentence is “I also enjoy visualising concepts and systems through visual design and small web apps.” Keep it after the writing / Rednote sentence.
 
 Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack and Chinese-language AI safety content on Rednote are linked naturally within a short sentence. The previous coding clause was removed to avoid duplicating the Web apps link in Outside work. The contact link is “Say hello at zhangyuexp@gmail.com” using mailto, replacing LinkedIn; a short “Thinking about similar questions?” invitation precedes it. Use “Rednote,” not 小红书, in the English UI. Hobby copy begins “I sometimes sew, boulder, and read.”
 
@@ -134,3 +134,4 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Applied the owner’s exact MND wording, including “LLM-assisted” and “research workflows.”
 - [x] Removed bullet markers and indentation from both current-research lines while keeping their text intact.
 - [x] The subsequent MOH copy is “Citizen-centric research and co-design for Healthier SG.” The owner asked to remove “Led”; retain the new official Healthier SG programme link from the preceding request.
+- [x] Moved the visual design / apps sentence to the end of Outside work and revised it to “I also enjoy visualising concepts and systems through visual design and small web apps.” Both subpage links and the `#projects` fragment are preserved.
