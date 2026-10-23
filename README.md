@@ -1,11 +1,12 @@
 # Zhang Yue’s personal website
 
-A concise personal homepage with a separate visual-design page.
+A concise personal homepage with separate reading-list and visual-design pages.
 
 - `index.html`: introduction, current work, track record, projects in progress, hobbies, and socials.
 - `personal.css`: homepage styling.
 - `personal.js`: copyright-year update.
 - `design.html` and `design.css`: a visual-design gallery covering identity, newsletters, and campaign work.
+- `reading.html` and `reading.css`: seven favourite books from 2024–25, with covers and short notes; shares the design page’s base styling.
 - `assets/`: local images and fonts.
 
 No build step is needed. To preview from the repository root:
