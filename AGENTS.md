@@ -1,184 +1,44 @@
 # Zhang Yue personal website
 
-A concise personal site about Yue’s background, AI governance research, writing, learning, and interests. The earlier UX and service design portfolio is preserved as a design archive.
+## Current scope
 
-## Project overview
+The owner asked for a much simpler personal site. The homepage has exactly three parts:
 
-- **Live site**: https://nekocchi-0417.github.io/portfolio/
-- **Host**: GitHub Pages, branch `main`, root `/`; the personal site and archive share the existing deployment.
-- **Stack**: Plain HTML, CSS, and JavaScript. No framework, package installation, or build step.
-- **Current home**: `index.html`, styled by `personal.css` with interactions in `personal.js`.
-- **Design archive**: `design.html`, `about.html`, `skills.html`, and four case studies in `projects/`, using the existing `style.css` and `script.js`.
-- **Original archive reference**: https://uxfol.io/zhangyue
+1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
+2. The two projects in progress, with separate live-prototype and GitHub source links.
+3. A few lines about hobbies and one link to a focused visual-design subpage.
 
-## Structure
+Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. LinkedIn, Substack, 小红书, and GitHub remain as social links.
 
-```text
-portfolio/
-├── index.html                  # Personal home: about, thinking, background, learning, off duty
-├── personal.css                # Personal site's layout, responsive styles, and visual design
-├── personal.js                 # Personal site's small interactive features
-├── assets/
-│   ├── favicon.svg
-│   ├── fonts/                  # Self-hosted Merchant font files
-│   └── images/                 # Six self-hosted personal-site images
-├── design.html                 # Earlier design portfolio landing page
-├── about.html                  # Archive bio, hobbies, and visual design work
-├── skills.html                 # Archive skills page
-├── style.css                   # Existing design archive styles
-├── script.js                   # Existing design archive interactions
-└── projects/                   # Four preserved design case studies
-```
+**Do not link to the previous UX portfolio.** `design.html` is now a new, focused visual-design page, not the old portfolio landing page. Older files (`about.html`, `skills.html`, and `projects/`) remain in the repository but are not part of the new visitor flow. Do not add links to them from either current page.
 
-## Editing and content
+## Source and deployment
 
-Edit personal-site text, links, course entries, research descriptions, and section order in `index.html`. Edit its appearance in `personal.css`, and its interactions in `personal.js`. Keep the site concise and distinguish ongoing research from published work. Do not publish private application notes or the supplied application PDF.
+- Live site: https://nekocchi-0417.github.io/portfolio/
+- GitHub Pages deploys `main` from the repository root. No build step or new deployment infrastructure is needed.
+- `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
+- `design.html` / `design.css`: visual work, currently NUS HCI Lab identity and Relive × Relove campaign.
+- `assets/images/`: local portrait and verified visual-design assets.
+- `assets/fonts/`: self-hosted Merchant fonts.
 
-The site has six self-hosted images in `assets/images/`: Yue’s portrait, bouldering photo, HCI Lab branding, and the covers of *Doing Good Better*, *Why Fish Don’t Exist*, and *The House in the Cerulean Sea*. The personal home uses the two photos and three book covers; HCI Lab branding is used by the archive. The archive About page also uses these six local files; other archive images still use the original UXfolio S3 URLs.
+Edit text directly in the HTML. Preserve native links, semantic headings, visible focus, 44px standalone link targets, and responsive layouts. Use a local static server for browser checks. Update this file whenever committing and pushing changes.
 
-Keep archive content and image layouts intact unless the owner requests an archive update. Each archive page has a slim banner returning to the personal home. Archive navigation uses “Design work” for `design.html`; the former résumé link now opens the current LinkedIn profile.
+## Content integrity
 
-## Local preview and deployment
+Ground biographical and impact claims in the supplied résumé and application notes. Current research is ongoing: SPAR, Odyssean Institute, and Better Futures. Past government roles are past. Do not publish private application material or imply research papers are already published.
 
-There is no build step. Open `index.html` in a browser, or serve this directory with a local static HTTP server (for example, `python3 -m http.server 8000`) and visit `http://localhost:8000/`.
+The homepage summarizes MOH research/co-design for Healthier SG, MND housing and retirement research prompting a policy review, and NUS Highest Distinction / faculty valedictorian. Hobbies are sewing, reading on a Kobo, bouldering, and visual design.
 
-Push approved changes to `main`; the existing GitHub Pages deployment serves the repository root automatically. No Actions workflow is required. Do not add or replace deployment infrastructure for ordinary content or styling changes.
+Verify actual image content before labeling it. Two source images previously labeled as Uncommon Minds were actually Relive × Relove workshop posters; neither is used as an Uncommon Minds example.
 
-## Notes for future agents
+## Review history
 
-- Keep TODOs and completion history honest. Update this file in the same batch as a commit and push.
-- Preserve the distinction between the current personal site and the earlier design archive.
-- Verify image content visually before changing labels or structure. Original S3 asset IDs are random hashes, and older alt text was sometimes inaccurate.
-- Check mobile and desktop layouts, internal navigation, keyboard access, and external links when changing the personal site.
+The earlier version received an expert usability / IA review using Uxcel skills from skills.sh and Vercel Web Interface Guidelines. Keep those principles where relevant, while prioritizing the owner's newer request for much less content and structure. Do not restore removed sections for audit completeness.
 
-## Current TODO
+## Current work
 
-- [x] Desktop (1280px), tablet (768px), and phone (390px) review passed; research/course disclosures, bookshelf notes, and archive return navigation were verified in the browser. Internal links and assets passed across all eight pages; no homepage console errors or broken images were observed.
-- [x] Published the personal-site update to `main` and verified the live GitHub Pages homepage, GitHub links, local images, and archive access on 22 October 2026.
-- [ ] Preserve the remaining archive gaps listed below; do not imply that optional work is complete.
-
-## Usability review
-
-The personal home was reviewed with the Uxcel usability heuristics and information architecture audits discovered through skills.sh, plus the current Vercel Web Interface Guidelines. This was an expert inspection and browser walkthrough, not a study with users.
-
-- [x] Added Writing navigation and clearer Research/Courses labels.
-- [x] Separated live prototype actions from GitHub source links and labeled side-project destinations.
-- [x] Increased mobile link targets to 44px and supporting text sizes.
-- [x] Clarified the bookshelf action, fixed shared screen-reader descriptions, and stabilized active section tracking.
-- [x] Linked visual work directly to its archive section and checked article titles against Substack.
-- [x] Verified 320px, 390px, 768px, and 1280px layouts, internal links, keyboard disclosures, and bookshelf updates. Both research demo destinations load.
-
-Sources: [IA audit](https://github.com/Uxcel-Lab/product-skills/blob/main/ux/audits/information-architecture/SKILL.md), [usability audit](https://github.com/Uxcel-Lab/product-skills/blob/main/ux/audits/heuristics/SKILL.md), [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md).
-
-## Current completed work
-
-- [x] Added the new personal home using `index.html`, `personal.css`, and `personal.js`.
-- [x] Preserved the earlier design portfolio in `design.html`, its supporting pages, and all four case studies.
-- [x] Added personal-site return banners and updated archive navigation and LinkedIn links.
-- [x] Self-hosted the six personal-site images, reused them on the archive About page, and kept the existing GitHub Pages deployment.
-- [x] Added GitHub and small-project links to the personal home.
-- [x] Added a compact README with editing, preview, and deployment instructions.
-
----
-
-# Design archive reference and history
-
-The sections below describe the preserved archive. Historical references to `index.html` mean the original portfolio homepage, now `design.html`. Its original font system uses Merchant and Open Sans, with navy `#2c2669`, orange `#FA8006`, muted `#817D93`, and pale lavender `#F5F4FF`.
-
-## Image inventory — About page
-
-Original image source (six assets now also self-hosted locally): `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e041976fa9110002bbd1c9/6862a79422ffb97224f9d76b/`
-
-| File | What it actually shows | Where used |
-|------|------------------------|------------|
-| `Il1QG07njlJh81BL.webp` | Personal portrait photo of Zhang Yue (against red roller-door wall) | `books-grid`, hobbies section |
-| `oGJr0XuQGKmPEW1p.webp` | Bouldering photo — "Fell with grace right after this was taken 🤪" | `books-grid`, hobbies section |
-| `S2dTX376383AONbL.webp` | Book cover — *Doing Good Better* (William MacAskill) | `image-gallery`, books section |
-| `MjvgMVnVKwNKuvG4.webp` | Book cover — *Good Services* (Lou Downe) | `image-gallery`, books section |
-| `MC4FS3DwApGtdJKR.webp` | Book cover — *Hillbilly Elegy* (JD Vance) | `image-gallery`, books section |
-| `ETzfP0MzYLm0wjFy.webp` | Book cover — *Why Fish Don't Exist* (Lulu Miller) | `image-gallery`, books section |
-| `hVBxtzsYDcAJY2eE.webp` | Book cover — *How to Know a Person* (David Brooks) | `image-gallery`, books section |
-| `MOTJKMrNUJZizaU2.webp` | Book cover — *The Wedding People* (Alison Espach) | `image-gallery`, books section |
-| `V5veDrNWvknD9LIN.webp` | Book cover — *The House in the Cerulean Sea* (TJ Klune) | `image-gallery`, books section |
-| `qnxTryWqqtflSsCt.webp` | NUS HCI Lab logo redesign — full overview (BEFORE → ITERATIONS → AFTER), 1920×1080 | `cs-image`, HCI Lab logos section |
-| `saxUJGASeEj2y9cb.webp` | NUS HCI Lab newsletter issue (blue/dark theme), 960×540 | `newsletters-gallery`, HCI Lab section |
-| `Xqhb0U3OEaXvOCcX.webp` | NUS HCI Lab newsletter issue (orange/city theme), 960×540 | `newsletters-gallery`, HCI Lab section |
-| `CAylXdM84CsHbhC1.webp` | NUS HCI Lab newsletter issue (dark/wave theme), 960×540 | `newsletters-gallery`, HCI Lab section |
-| `g8mFDSEZuFj92cQY.webp` | Project Relive x Relove campaign visual (wide banner) | `relive-gallery` |
-| `aM5RDmp4njP2twaL.webp` | Project Relive x Relove campaign visual (wide banner) | `relive-gallery` |
-| `XLYzWI8MRMqOt3jq.webp` | Project Relive x Relove campaign visual | `relive-gallery` |
-| `UxclleLNVReUgL6j.webp` | Project Relive x Relove campaign visual | `relive-gallery` |
-| `nWKdkx013gH1Mzw9.webp` | Uncommon Minds logo design | `image-gallery`, Uncommon Minds section |
-| `mJIWCzT5bER84QRN.webp` | Uncommon Minds logo variant | `image-gallery`, Uncommon Minds section |
-
----
-
-## Key CSS classes (style.css reference)
-
-### About page
-| Class | Purpose |
-|-------|---------|
-| `.books-grid` | 2-col grid for the personal hobby photos (portrait + bouldering). `height: 280px; object-fit: cover` |
-| `.image-gallery` | Auto-fill grid (`minmax(160px, 1fr)`). `height: 160px; object-fit: contain`. Used for book covers and Uncommon Minds logos |
-| `.newsletters-gallery` | Modifier on `.image-gallery` — overrides to 2 columns, `height: 260px`. Used for HCI Lab newsletters |
-| `.relive-gallery` | Modifier on `.image-gallery` — overrides to 2 columns, `height: 220px; object-fit: cover`. Used for Relive x Relove visuals |
-
-### Case study pages
-| Class | Purpose |
-|-------|---------|
-| `.cs-hero-grid` | 2-col header grid: title+subtitle left, hero image right |
-| `.cs-prob-sol` | 2-col grid: Problem left, Solution right |
-| `.cs-2col` | 2-col alternating section: image + text side-by-side. Children: `.cs-col-img`, `.cs-col-text` |
-| `.cs-phases` | Horizontal step indicator with connecting lines. Children: `.cs-phase` (each with `.num` + label) |
-| `.cs-image` | Full-width standalone image |
-| `.cs-image-grid` | Auto-fill grid for process screenshots (`minmax(250px, 1fr)`) |
-| `.cs-learnings` | Styled learnings section with numbered list |
-| `.cs-impact` | Tinted box for impact metrics |
-| `.finding-card` | Highlighted finding card with `.finding-label` badge |
-
----
-
-## Design archive TODO
-
-### Missing content (owner needs to supply or confirm)
-
-- [x] **Personal photos on About page** — recovered: portrait (`Il1QG07njlJh81BL.webp`) and bouldering (`oGJr0XuQGKmPEW1p.webp`) now placed correctly in the hobbies section with the "Fell with grace" caption.
-- [ ] **Concept video on future-of-work case study** — the original case study page includes a concept video embed. Owner needs to confirm the YouTube/Vimeo URL.
-
-### Improvements / polish
-
-- [ ] **Optional About page image carousels** — the original UXfolio used prev/next carousels for the logo redesign and newsletter image groups. These were simplified to static CSS grids. Could add a lightweight JS carousel if the owner wants it back.
-- [ ] **Self-host remaining archive images** — the personal site's six images are local and reused on the archive About page; other archive images still use UXfolio's S3 bucket. If UXfolio ever takes those down the image-heavy pages (about, all case studies) break. Fonts are now self-hosted; images are the larger remaining migration.
-
----
-
-## Design archive completed history
-
-- [x] Full HTML/CSS replication of all original pages: original index (now design.html), skills, about, and all 4 case studies
-- [x] Background: CSS radial-gradient replacing the original PNG background image (prevents tiling artifacts)
-- [x] Project grid: 2-column layout with full-width cards for projects 1 and 4
-- [x] Nav: fully transparent (removed opaque white background)
-- [x] Phase step bubbles: number in orange filled circle, pill-shaped container
-- [x] Case study image grids: `height: auto` so process/research screenshots aren't cropped
-- [x] About page image galleries: `object-fit: contain` so logos and newsletters display in full
-- [x] Cat emoji favicon 🐱 on all pages
-- [x] GitHub Pages enabled at https://nekocchi-0417.github.io/portfolio/
-- [x] AGENTS.md + CLAUDE.md symlink
-- [x] Mobile project cards: titles/descriptions remain visible on touch devices instead of depending on hover
-- [x] About page: recovered HCI Lab promo video embed
-- [x] About page: recovered Project Relive x Relove image gallery
-- [x] Health-programmes phase pills now link to their corresponding case study sections
-- [x] Future-of-work phase pills now link to their corresponding case study sections
-- [x] Scroll-reveal animations via IntersectionObserver (script.js, progressive delay, disabled on small screens)
-- [x] Skills page: orchestrator paragraph and skills-explainer list styled correctly
-- [x] Project cards: aspect-ratio based sizing (no more min-height hacks), responsive resets to auto on mobile
-- [x] Responsive pass complete: 768px and 520px breakpoints covering hero, nav, grids, phase pills, typography, and cards
-- [x] Active nav state on case study pages: intentionally none (no top-level nav item corresponds to a case study) — matches original behaviour
-- [x] ORIGINAL_SITE_COMPARISON.md added documenting confirmed matches and known differences vs original UXfolio
-- [x] Case study layout restructure: all 4 case studies now use `cs-hero-grid` (title left, hero image right in header), `cs-prob-sol` (Problem + Solution side-by-side), and `cs-2col` (alternating image+text sections) matching the original UXfolio layout
-- [x] About page images fully corrected: personal photos (portrait + bouldering) moved to hobbies section; 7 book covers moved to books section; HCI Lab logos section now shows correct logo overview image; newsletters section shows 3 actual newsletter designs
-- [x] About page image sizing fixed: `books-grid` uses `object-fit: cover` for photos; `image-gallery` uses fixed 160px height for compact uniform display; `newsletters-gallery` uses 2-col 260px for landscape newsletters; `relive-gallery` uses 2-col 220px with cover
-- [x] Phase step bubbles redesigned: vertical steps with connecting lines between number circles (thin lavender border, transparent bg on idle, orange fill on hover) — matches original UXfolio pattern
-- [x] index.html: 4th project card removed `full-width` class so it renders as half-width (left column), matching original
-- [x] Hotel-management phase pills now link to their corresponding case study sections (User research → Understanding the Users, Usability Evaluation & Wireframing → Wireframes, The Pitch → pitch & feedback)
-- [x] Self-hosted Merchant fonts under `assets/fonts/` (Bold/Medium/Regular); CSS @font-face rules now reference local paths and use `font-display: swap` for faster first paint. Removes one external dependency on the UXfolio S3 CDN.
+- [x] Reduced the homepage to the three requested parts.
+- [x] Kept both AI projects and their prototype / GitHub destinations.
+- [x] Replaced the old portfolio landing page with a standalone visual-design subpage and removed all previous-portfolio links from the current flow.
+- [x] Removed the previous writing, courses, timeline, bookshelf, and expanded research sections from the homepage.
+- [x] Browser-reviewed the homepage and design subpage at desktop and phone widths; local assets, anchors, return links, and the absence of previous-portfolio links passed. GitHub Pages publishes this change from `main`.
