@@ -51,17 +51,19 @@ h2 { font-family: var(--serif); font-size: 32px; line-height: 1.3; letter-spacin
 .linked-interests { margin: 24px 0 4px; }
 .contact-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; text-decoration: none; }
 .contact-link span { margin-left: 5px; color: var(--accent); }
-.projects, .outside-work { padding: 36px 0; border-top: 1px solid var(--line); }
+.outside-work { padding: 36px 0; border-top: 1px solid var(--line); }
+.projects { margin-top: 28px; scroll-margin-top: 28px; }
+.projects > .small-heading { margin: 0; }
 .project { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px 0; }
 .project + .project { border-top: 1px solid var(--line); }
-.project h3 { font-size: 15px; font-weight: 600; line-height: 1.5; margin: 0 0 4px; text-wrap: pretty; }
+.project h4 { font-size: 15px; font-weight: 600; line-height: 1.5; margin: 0 0 4px; text-wrap: pretty; }
 .project p { color: var(--muted); font-size: 13px; line-height: 1.7; margin: 0; }
 .project-description { min-width: 0; }
 .project-actions { display: flex; gap: 20px; flex-shrink: 0; font-size: 12px; }
 .project-actions a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; white-space: nowrap; }
 .project-actions a:first-child { color: var(--accent); }
 .project-actions a span { margin-left: 4px; }
-.outside-work p { margin-bottom: 11px; }
+.outside-work > p { margin-bottom: 11px; }
 footer { padding: 20px 0 30px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 @media(max-width: 700px) {
   .project { display: block; }
@@ -81,10 +83,9 @@ footer { padding: 20px 0 30px; border-top: 1px solid var(--line); color: var(--m
   .intro h1 { grid-column: 1; }
   .intro p { grid-column: 1 / -1; grid-row: 2; }
   .portrait { grid-column: 2; grid-row: 1; }
-  .projects, .outside-work { padding: 28px 0; }
+  .outside-work { padding: 28px 0; }
   h2 { font-size: 29px; }
   .small-heading { font-size: 14px; }
-  .outside-work a { display: inline-flex; align-items: center; min-height: 44px; }
 }
 @media(max-width: 380px) {
   .site-header { display: block; }

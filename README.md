@@ -2,7 +2,7 @@
 
 A concise personal homepage with separate reading-list and visual-design pages.
 
-- `index.html`: introduction, current work, track record, projects in progress, hobbies, and socials.
+- `index.html`: introduction, current work, track record, and socials; Outside work includes hobbies and projects in progress.
 - `personal.css`: homepage styling.
 - `personal.js`: copyright-year update.
 - `design.html` and `design.css`: a visual-design gallery covering identity, newsletters, and campaign work.

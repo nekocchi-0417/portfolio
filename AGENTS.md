@@ -2,11 +2,10 @@
 
 ## Current scope
 
-The owner asked for a much simpler personal site. The homepage has exactly three parts:
+The owner asked for a much simpler personal site. The homepage has two main parts:
 
 1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
-2. The two projects in progress, with separate live-prototype and GitHub source links.
-3. A few lines about hobbies, with “read” linking to the reading-list subpage and “visual design” linking directly to its focused subpage.
+2. Outside work: a few lines about hobbies followed by the two projects in progress, with separate live-prototype and GitHub source links. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “making complex ideas and ecosystems easier to see” links to the projects below.
 
 Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack, Chinese-language AI safety content on Rednote, and GitHub apps are linked naturally within a short sentence; LinkedIn is the contact link. Use “Rednote,” not 小红书, in the English UI.
 
@@ -45,7 +44,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 ## Current work
 
-- [x] Reduced the homepage to the three requested parts.
+- [x] Simplified the homepage; the owner’s latest revision groups the projects under Outside work.
 - [x] Kept both AI projects and their prototype / GitHub destinations.
 - [x] Replaced the old portfolio landing page with a standalone visual-design subpage and removed all previous-portfolio links from the current flow.
 - [x] Removed the previous writing, courses, timeline, bookshelf, and expanded research sections from the homepage.
@@ -66,3 +65,9 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Linked the homepage word “read” to `reading.html`, showing the owner’s seven favourites from 2024–25 with short notes and local covers.
 - [x] Removed the Kobo-versus-Kindle joke and linked the words “visual design” directly to `design.html`.
 - [x] Checked the reading page at desktop and phone widths: all seven covers load, no horizontal overflow, and home / reading / visual-design links work.
+
+## Projects within Outside work
+
+- [x] Moved both projects into Outside work, following the hobby sentence. The top navigation now reflects the two main sections.
+- [x] Linked “making complex ideas and ecosystems easier to see” to the nested Projects in progress block; visual design still links directly to its subpage.
+- [x] Preserved the two prototype and source-link pairs, adjusted heading levels, and checked desktop / phone layout and the internal project link.
