@@ -11,6 +11,8 @@ Keep the homepage concise. Do not reintroduce standalone writing, courses, timel
 
 The owner requested more white space: keep a clear gap between the introduction, Currently, Previously, social links, and Outside work. The current layout uses 16px body text, restrained line lengths, and larger spacing between content groups. Current research is three short bullets, rather than a paragraph.
 
+In the introduction, both “keeping human agency as AI becomes more capable” and “helping institutions recognise risks and act early” are bold, per the owner’s request.
+
 **Do not link to the previous UX portfolio.** `design.html` is now a new, focused visual-design page, not the old portfolio landing page. Older files (`about.html`, `skills.html`, and `projects/`) remain in the repository but are not part of the new visitor flow. Do not add links to them from current pages.
 
 ## Source and deployment
