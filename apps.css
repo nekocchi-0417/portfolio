@@ -11,16 +11,16 @@
   flex-direction: column;
   min-width: 0;
 }
-.app-preview { position: relative; display: block; overflow: hidden; aspect-ratio: 8 / 5; margin-bottom: 24px; border: 1px solid var(--line); border-radius: 12px; background: #efe8db; }
-.app-preview img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform 250ms ease; }
+.app-preview { position: relative; display: block; overflow: hidden; aspect-ratio: 8 / 5; margin-bottom: 24px; border: 1px solid var(--line); border-radius: 4px; background: #efe8db; transition: border-color 160ms ease; }
+.app-preview img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .preview-research { background: #f7faf8; }
 .preview-governance { background: #10141f; border-color: #262c3b; }
 .preview-housing { background: #eff4f5; }
 .preview-game { background: #191b2d; }
-.preview-invitation { position: absolute; bottom: 12px; right: 12px; display: inline-flex; gap: 12px; align-items: center; padding: 5px 12px; background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 20px; font-size: 12px; line-height: 1.6; transform: translateY(5px); opacity: 0; transition: opacity 180ms ease, transform 180ms ease; }
+.preview-invitation { position: absolute; bottom: 12px; right: 12px; display: inline-flex; gap: 12px; align-items: center; padding: 5px 12px; background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 2px; font-size: 12px; line-height: 1.6; opacity: 0; transition: opacity 180ms ease; }
 .preview-invitation > span { color: var(--rust); }
-.app-preview:hover img, .app-preview:focus-visible img { transform: scale(1.025); }
-.app-preview:hover .preview-invitation, .app-preview:focus-visible .preview-invitation { opacity: 1; transform: translateY(0); }
+.app-preview:hover, .app-preview:focus-visible { border-color: var(--rust); }
+.app-preview:hover .preview-invitation, .app-preview:focus-visible .preview-invitation { opacity: 1; }
 .app-preview:focus-visible { outline-offset: 5px; }
 .app h2 { font-size: 26px; margin: 0 0 10px; }
 .app-note { color: var(--muted); font-size: 15px; line-height: 1.75; margin: 0 0 18px; }
@@ -34,7 +34,7 @@
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
 .github-link { text-decoration: none; }
 @media (hover: none) {
-  .preview-invitation { opacity: 1; transform: none; }
+  .preview-invitation { opacity: 1; }
 }
 
 @media (max-width: 700px) {
@@ -43,6 +43,5 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
   .app-status, .app-credit { font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .app-preview img, .preview-invitation { transition: none; }
-  .app-preview:hover img, .app-preview:focus-visible img, .preview-invitation { transform: none; }
+  .app-preview, .preview-invitation { transition: none; }
 }

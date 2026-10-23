@@ -28,9 +28,9 @@ a {
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
   touch-action: manipulation;
-  transition: color 160ms ease, text-underline-offset 160ms ease;
+  transition: color 160ms ease;
 }
-a:hover, a:active { color: var(--rust); text-underline-offset: 7px; }
+a:hover, a:active { color: var(--rust); }
 a:focus-visible { outline: 2px solid var(--rust); outline-offset: 5px; }
 ::selection { background: #e8d5bd; }
 .page { max-width: 900px; padding: 0 40px; margin: 0 auto; }

@@ -2,6 +2,8 @@
 
 ## Current scope
 
+**Current visual tone:** the owner found the first reference-inspired update “a little too cutesy.” Keep warmth in clear, conversational wording, serif type, the cream/rust palette, and thoughtful hierarchy. The greeting is text-only again. Do not restore doodles, irregular decorative shapes, rotating / tilting / lifting elements, playful wordplay, or pill-shaped preview labels. Keep the useful app previews and native reading disclosures with quiet colour / focus feedback.
+
 The owner asked for a much simpler personal site. The homepage has two main parts:
 
 1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
@@ -22,11 +24,11 @@ In the introduction, both “keeping human agency as AI becomes more capable” 
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
 - `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
 - The visual-design page’s intro is “I like making ideas clearer through design.”
-- `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Native `details` / `summary` controls reveal the existing brief notes; titles and authors stay visible. Verified local covers move gently on hover, focus, and open, with reduced-motion overrides. Reuses `design.css` for base styling. Do not invent personal reactions to the books.
+- `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Native `details` / `summary` controls reveal the existing brief notes; titles and authors stay visible. Verified local covers remain stationary; “Notes” cues and plus / minus signs identify disclosures. Reuses `design.css` for base styling. Do not invent personal reactions to the books.
 - `apps.html` / `apps.css`: six public web apps, with verified demo / prototype links where available and public source links. Four real local screenshots show the dashboard, governance map, housing guide, and wedding game. Original SVG illustrations represent BookWith (sign-in required) and Media Monitor (runs locally); do not describe those two images as app screenshots. Reuses `design.css` for base styling and links back to Outside work. The homepage retains `#projects` on the hobby paragraph so older fragment links still reach the new subpage link.
 - `visualising.html`: immediate redirect and fallback link to `apps.html`, preserving the previously published URL. Its canonical URL points to the apps page. `visualising.css` was removed.
 - `assets/images/`: verified book-cover and visual-design assets, plus older assets used only by legacy pages.
-- The owner asked to remove the profile photo; do not restore a portrait or its social-preview image without a new request. A small original `books-and-thread.svg` illustration now accompanies the greeting and links to the reading list.
+- The owner asked to remove the profile photo; do not restore a portrait or its social-preview image without a new request. The later book-and-thread homepage illustration was also removed when the owner requested a less cutesy treatment; its unused SVG is deleted.
 - `assets/fonts/`: self-hosted Merchant fonts.
 
 Edit text directly in the HTML. Preserve native links, semantic headings, visible focus, 44px standalone link targets, and responsive layouts. Use a local static server for browser checks. Update this file whenever committing and pushing changes.
@@ -118,3 +120,10 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Added four authentic app screenshots and two clearly described illustrations; retained in-progress labels, actual prototype / source URLs, and Flow attribution. BookWith currently opens the BookBuddy sign-in screen, so its directory entry flags the sign-in requirement.
 - [x] Kept all nine reading notes verbatim inside native disclosures. Browser accessibility output preserves the book headings and exposes the expanded/collapsed controls; some other browser/screen-reader combinations may flatten headings inside summary, while named native disclosures remain available.
 - [x] Reviewed homepage, apps, and reading layouts at 320px, 390px, 768px, and 1280px with no horizontal overflow. Checked the illustration’s reading link, mouse and keyboard disclosure toggling, a second book’s note at 320px, skip-link focus into the first app preview, visible preview invitation, all new app images, and all nine book covers. Local links, fragments, image attributes, SVG XML, and ARIA targets pass; fresh Vercel guidance and cached Uxcel review found no blocking issues.
+
+## Tone calibration
+
+- [x] Removed the homepage book/thread illustration, rotating asterisk, and hand-drawn navigation underline. Kept the original static asterisk, standard link feedback, warm contact invitation, and restrained thank-you footer.
+- [x] Replaced playful app copy and labels with direct descriptions and “Open prototype” / “Open app” / “Play” / “View code.” Retained real screenshots, project status, Flow attribution, and destination URLs. The two illustrative tool diagrams now use crisp geometry and pale neutral backgrounds.
+- [x] Reduced preview corner rounding and removed zoom / slide effects. Reading covers have no decorative blobs, tilts, lift, or shadows; native notes and visible keyboard focus remain.
+- [x] Checked the pared-back homepage and diagrams at desktop size, all three updated pages at 390px and 320px without overflow, and a note opened by keyboard with visible focus and a stationary cover. Source checks preserve all external destinations, nine note texts, local references, and ARIA IDs.
