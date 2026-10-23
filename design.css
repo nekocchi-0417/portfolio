@@ -28,8 +28,9 @@ a {
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
   touch-action: manipulation;
+  transition: color 160ms ease, text-underline-offset 160ms ease;
 }
-a:hover, a:active { color: var(--rust); }
+a:hover, a:active { color: var(--rust); text-underline-offset: 7px; }
 a:focus-visible { outline: 2px solid var(--rust); outline-offset: 5px; }
 ::selection { background: #e8d5bd; }
 .page { max-width: 900px; padding: 0 40px; margin: 0 auto; }
@@ -100,4 +101,7 @@ section + section { border-top: 1px solid var(--line); padding-top: 38px; }
   .intro .image-note, figcaption { font-size: 13px; }
   .film-link { font-size: 13px; }
   section + section { padding-top: 29px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  a { transition: none; }
 }
