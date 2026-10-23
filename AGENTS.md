@@ -18,8 +18,8 @@ Keep the homepage concise. Do not reintroduce standalone writing, courses, timel
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
 - `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
 - `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Includes brief notes and verified local covers. Reuses `design.css` for base styling.
-- `assets/images/`: local portrait and verified visual-design assets.
-- `assets/images/yue-profile.jpg`: the owner’s supplied outdoor profile photo (`20221126_161717_Original.jpg`). Preserve the supplied image; homepage CSS frames it around the face. The social-preview image uses this photo too.
+- `assets/images/`: verified book-cover and visual-design assets, plus older assets used only by legacy pages.
+- The current homepage is text-only. The owner asked to remove the profile photo; do not restore a portrait or its social-preview image without a new request.
 - `assets/fonts/`: self-hosted Merchant fonts.
 
 Edit text directly in the HTML. Preserve native links, semantic headings, visible focus, 44px standalone link targets, and responsive layouts. Use a local static server for browser checks. Update this file whenever committing and pushing changes.
@@ -81,6 +81,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 ## Latest photo and reading additions
 
-- [x] Replaced the profile and social-preview photo with the owner’s supplied outdoor image. Homepage CSS frames the unaltered photo around the face.
+- [x] The owner’s latest revision removes the profile photo and social-preview image. The introduction now uses the full text width, and the unused uploaded photo asset is removed from the current site.
+- [x] Checked the text-only introduction at desktop and phone widths: no reserved photo column or horizontal overflow remains.
 - [x] Added Skin in the Game by Nassim Nicholas Taleb and Abundance by Ezra Klein and Derek Thompson to the reading list. Keep book notes descriptive rather than inventing personal reactions or reading dates.
 - [x] Verified both new covers against publisher pages: https://www.penguinrandomhouse.com/books/537828/skin-in-the-game-by-nassim-nicholas-taleb/ and https://www.simonandschuster.com/books/Abundance/Ezra-Klein/9781668023488. Checked the new photo and nine-book list at desktop and phone widths, including cover loading and no horizontal overflow.
