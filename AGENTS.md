@@ -34,7 +34,7 @@ portfolio/
 
 Edit personal-site text, links, course entries, research descriptions, and section order in `index.html`. Edit its appearance in `personal.css`, and its interactions in `personal.js`. Keep the site concise and distinguish ongoing research from published work. Do not publish private application notes or the supplied application PDF.
 
-The home page has six self-hosted images in `assets/images/`: Yue’s portrait, bouldering photo, HCI Lab branding, and the covers of *Doing Good Better*, *Why Fish Don’t Exist*, and *The House in the Cerulean Sea*. The personal home uses local assets. The archive About page also uses these six local files; other archive images still use the original UXfolio S3 URLs.
+The site has six self-hosted images in `assets/images/`: Yue’s portrait, bouldering photo, HCI Lab branding, and the covers of *Doing Good Better*, *Why Fish Don’t Exist*, and *The House in the Cerulean Sea*. The personal home uses the two photos and three book covers; HCI Lab branding is used by the archive. The archive About page also uses these six local files; other archive images still use the original UXfolio S3 URLs.
 
 Keep archive content and image layouts intact unless the owner requests an archive update. Each archive page has a slim banner returning to the personal home. Archive navigation uses “Design work” for `design.html`; the former résumé link now opens the current LinkedIn profile.
 
@@ -54,7 +54,7 @@ Push approved changes to `main`; the existing GitHub Pages deployment serves the
 ## Current TODO
 
 - [x] Desktop (1280px), tablet (768px), and phone (390px) review passed; research/course disclosures, bookshelf notes, and archive return navigation were verified in the browser. Internal links and assets passed across all eight pages; no homepage console errors or broken images were observed.
-- [ ] Publish the completed personal-site update to `main`, then verify the live Pages deployment.
+- [x] Published the personal-site update to `main` and verified the live GitHub Pages homepage, GitHub links, local images, and archive access on 22 October 2026.
 - [ ] Preserve the remaining archive gaps listed below; do not imply that optional work is complete.
 
 ## Current completed work
