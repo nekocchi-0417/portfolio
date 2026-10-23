@@ -9,6 +9,8 @@ The owner asked for a much simpler personal site. The homepage has two main part
 
 Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack, Chinese-language AI safety content on Rednote, and GitHub apps are linked naturally within a short sentence; LinkedIn is the contact link. Use “Rednote,” not 小红书, in the English UI.
 
+The owner requested more white space: keep a clear gap between the introduction, Currently, Previously, social links, and Outside work. The current layout uses 16px body text, restrained line lengths, and larger spacing between content groups. Current research is three short bullets, rather than a paragraph.
+
 **Do not link to the previous UX portfolio.** `design.html` is now a new, focused visual-design page, not the old portfolio landing page. Older files (`about.html`, `skills.html`, and `projects/`) remain in the repository but are not part of the new visitor flow. Do not add links to them from current pages.
 
 ## Source and deployment
@@ -26,9 +28,9 @@ Edit text directly in the HTML. Preserve native links, semantic headings, visibl
 
 ## Content integrity
 
-Ground biographical and impact claims in the supplied résumé and application notes. Current research is ongoing: SPAR, Odyssean Institute, and Better Futures. Past government roles are past. Do not publish private application material or imply research papers are already published.
+Ground biographical and impact claims in the supplied résumé and application notes. Current research is ongoing: SPAR and Odyssean Institute. The owner’s latest edit removes Better Futures from the site. Past government roles are past. Do not publish private application material or imply research papers are already published.
 
-The homepage describes Yue as from Singapore and now based in Berkeley. It links the Odyssean Institute and names the Better Futures fellowship. Track record uses the owner’s updated wording: MND research for national-level housing/retirement policies and AI-assisted scenario-planning workflows; MOH citizen research/co-design for Healthier SG (over 1 million residents enrolled); NUS faculty valedictorian (approximately 2,000-student cohort), Psychology with Sociology minor, Highest Distinction. Hobbies are sewing, reading, bouldering, and visual design. The owner asked to remove the Kobo-versus-Kindle joke; keep hobby copy straightforward.
+The homepage describes Yue as from Singapore and now based in Berkeley. Current work is a short list: research fellow at SPAR and the Odyssean Institute; studying international AI coordination, expert judgments of AI risk, and citizen deliberation; exploring research on AI-driven gradual disempowerment. Keep the final point unlinked and do not imply a completed study. Track record uses the owner’s updated wording: MND research for national-level housing/retirement policies and AI-assisted scenario-planning workflows; MOH citizen research/co-design for Healthier SG (over 1 million residents enrolled); NUS faculty valedictorian (approximately 2,000-student cohort), Psychology with Sociology minor, Highest Distinction. Hobbies are sewing, reading, bouldering, and visual design. The owner asked to remove the Kobo-versus-Kindle joke; keep hobby copy straightforward.
 
 Verify actual image content before labeling it. The old source labels were swapped: `nWKdkx013gH1Mzw9` and `mJIWCzT5bER84QRN` are Relive × Relove workshop posters; `XLYzWI8MRMqOt3jq` and `UxclleLNVReUgL6j` are the actual Uncommon Minds logo and brand-kit boards. The current design page uses correctly named local assets. Do not add a year to Uncommon Minds without resolving conflicting source dates. Credit the HCI newsletters and film as collaborative work with other design interns.
 
@@ -38,7 +40,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 ## Latest copy edits
 
-- [x] Added Singapore origin, linked the Odyssean Institute, and named Better Futures as a fellowship.
+- [x] Added Singapore origin and linked the Odyssean Institute. Better Futures was subsequently removed at the owner’s request.
 - [x] Updated MND/MOH/NUS bullets with the owner’s supplied wording and approximate cohort size.
 - [x] Replaced the social-button row with naturally linked writing, Rednote, and web-app phrases, plus a LinkedIn contact link.
 - [x] Confirmed the Odyssean website and MOH’s published enrolment figure supporting “over 1 million.”
@@ -59,7 +61,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 - [x] Verified the expanded design gallery at desktop and phone widths: all ten images load, layout fits without horizontal overflow, and full-size asset links resolve.
 
-- [x] Updated the current-research paragraph to the owner’s wording on international coordination, expert reasoning, and citizen deliberation. The owner’s latest edit removes the paper link: keep “AI-driven gradual disempowerment” as plain text.
+- [x] Replaced the current-research paragraph with three concise points, removed Better Futures, and kept “AI-driven gradual disempowerment” as plain text.
 
 ## Reading-list subpage
 
@@ -85,3 +87,12 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Checked the text-only introduction at desktop and phone widths: no reserved photo column or horizontal overflow remains.
 - [x] Added Skin in the Game by Nassim Nicholas Taleb and Abundance by Ezra Klein and Derek Thompson to the reading list. Keep book notes descriptive rather than inventing personal reactions or reading dates.
 - [x] Verified both new covers against publisher pages: https://www.penguinrandomhouse.com/books/537828/skin-in-the-game-by-nassim-nicholas-taleb/ and https://www.simonandschuster.com/books/Abundance/Ezra-Klein/9781668023488. Checked the new photo and nine-book list at desktop and phone widths, including cover loading and no horizontal overflow.
+
+## Final UI and usability audit
+
+- [x] Added space between major content groups, increased paragraph and project text sizes, and shortened the text measure on the homepage. Kept the two main sections and all approved content.
+- [x] Replaced the research paragraph with a Currently list and removed Better Futures. The gradual-disempowerment point says “Exploring research on AI-driven gradual disempowerment.”
+- [x] Reviewed all three current pages with the cached Uxcel usability / IA skills and fresh Vercel Web Interface Guidelines. Corrected accessible link names to preserve visible labels, and added `role="list"` to preserve the unstyled reading list’s semantics in Safari / VoiceOver.
+- [x] Browser checks at 320px, 390px, 768px, and 1440px found no horizontal overflow. Checked homepage anchors, reading / design navigation and return paths, all 19 images, and keyboard skip links with visible focus on all three pages.
+- [x] Local file, fragment, ID, image-dimension, canonical, sitemap, and robots checks passed. All 30 distinct published page / asset URLs checked returned 200. Outbound public destinations worked; LinkedIn blocks automated access and Rednote redirects to login, so those two destinations were treated as access limits rather than broken links.
+- [x] Text contrast on the paper background passes WCAG AA for normal text: body 12.36:1, muted 4.82:1, accent 4.99:1. Reduced-motion handling and content without JavaScript remain intact. No critical or major issues were found in this review; both minor accessibility findings were fixed.
