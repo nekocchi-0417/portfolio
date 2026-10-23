@@ -57,6 +57,19 @@ Push approved changes to `main`; the existing GitHub Pages deployment serves the
 - [x] Published the personal-site update to `main` and verified the live GitHub Pages homepage, GitHub links, local images, and archive access on 22 October 2026.
 - [ ] Preserve the remaining archive gaps listed below; do not imply that optional work is complete.
 
+## Usability review
+
+The personal home was reviewed with the Uxcel usability heuristics and information architecture audits discovered through skills.sh, plus the current Vercel Web Interface Guidelines. This was an expert inspection and browser walkthrough, not a study with users.
+
+- [x] Added Writing navigation and clearer Research/Courses labels.
+- [x] Separated live prototype actions from GitHub source links and labeled side-project destinations.
+- [x] Increased mobile link targets to 44px and supporting text sizes.
+- [x] Clarified the bookshelf action, fixed shared screen-reader descriptions, and stabilized active section tracking.
+- [x] Linked visual work directly to its archive section and checked article titles against Substack.
+- [x] Verified 320px, 390px, 768px, and 1280px layouts, internal links, keyboard disclosures, and bookshelf updates. Both research demo destinations load.
+
+Sources: [IA audit](https://github.com/Uxcel-Lab/product-skills/blob/main/ux/audits/information-architecture/SKILL.md), [usability audit](https://github.com/Uxcel-Lab/product-skills/blob/main/ux/audits/heuristics/SKILL.md), [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md).
+
 ## Current completed work
 
 - [x] Added the new personal home using `index.html`, `personal.css`, and `personal.js`.

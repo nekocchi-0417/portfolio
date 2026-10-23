@@ -7,3 +7,50 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
 .prototypes{margin-top:30px}.prototypes>.eyebrow{margin-bottom:13px;font-size:9px}.prototypes>a:not(.all-projects){display:flex;align-items:center;justify-content:space-between;gap:20px;text-decoration:none;padding:16px 0;border-top:1px solid var(--line)}.prototypes strong{font-size:13px;font-weight:500;display:block}.prototypes small{font-size:11px;color:var(--muted);display:block;margin-top:4px}.prototypes>a>span:last-child{color:var(--accent)}.prototypes .all-projects{font-size:11px;display:inline-block;margin-top:15px;text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* Usability review: readable navigation, clear project destinations, and touch access. */
+a,button,summary{touch-action:manipulation}
+h2,h3{text-wrap:pretty}
+.site-header nav{gap:24px;font-size:14px}
+.site-header nav a{display:inline-flex;align-items:center;min-height:44px}
+.site-header nav a[aria-current]:after{bottom:5px}
+.book[aria-pressed=true] span{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.prototypes>.eyebrow{font-size:11px}
+.prototype-item{padding:20px 0;border-top:1px solid var(--line)}
+.prototype-item h3{font-size:15px;font-weight:500}
+.prototype-item p{font-size:13px;color:var(--muted);margin:5px 0 8px}
+.project-actions{display:flex;gap:24px;flex-wrap:wrap;font-size:12px}
+.project-actions a{text-decoration:none;border-bottom:1px solid var(--line)}
+.project-actions a:first-child{color:var(--accent)}
+.project-actions a span{margin-left:3px}
+.prototypes .all-projects{font-size:12px}
+.bookshelf-heading>span{font-family:var(--sans);font-size:12px;letter-spacing:0}
+@media(max-width:900px){.site-header nav{gap:14px;font-size:13px}}
+@media(max-width:620px){
+  .site-header{padding:16px 0;align-items:center;gap:16px}
+  .site-header nav{gap:0 12px;font-size:13px;max-width:260px}
+  .intro-foot{font-size:11px}
+  .intro-foot>span{max-width:230px}
+  .section-no,.section-margin p,.section-body>.eyebrow,.intro .eyebrow{font-size:11px}
+  .question-index{font-size:11px}
+  .research-note p,.writing-aside,.timeline-row p,.course-list li div>span{font-size:13px}
+  .writing-row .eyebrow,.timeline-date,.course-year{font-size:11px}
+  .timeline-row{grid-template-columns:92px 1fr;gap:15px}
+  .course-list h3{font-size:14px}
+  .small-link,.text-link,.more-courses>summary{font-size:13px}
+  .prototype-item h3{font-size:14px}
+  .prototype-item p,.project-actions,.prototypes .all-projects{font-size:13px}
+  .side-projects strong{font-size:14px}
+  .side-projects small{font-size:12px}
+  .book span{font-size:12px;height:47px}
+  .bookshelf{background:linear-gradient(transparent calc(100% - 68px),#e0e0ce calc(100% - 68px),#e0e0ce calc(100% - 64px),transparent calc(100% - 64px))}
+  .book-note{font-size:13px;min-height:70px}
+  .footer-bottom{font-size:11px}
+}
+@media(max-width:620px),(pointer:coarse){
+  .social-links a,.small-link,.text-link,.footer-bottom a,.project-actions a,.prototypes .all-projects{display:inline-flex;align-items:center;min-height:44px}
+  .social-links{row-gap:4px}
+}
+.wordmark{white-space:nowrap;flex-shrink:0}
+@media(max-width:620px){.site-header nav{display:grid;grid-template-columns:repeat(3,max-content);justify-content:end;column-gap:12px;row-gap:0;max-width:none}}
+@media(max-width:360px){.site-header{gap:12px}.site-header nav{font-size:12px;column-gap:8px}.wordmark{font-size:30px}.wordmark-star{font-size:21px}}

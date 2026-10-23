@@ -11,8 +11,12 @@ books.forEach(book => book.addEventListener('click', () => {
 document.querySelector('#year').textContent = new Date().getFullYear();
 if ('IntersectionObserver' in window) {
   const navLinks = [...document.querySelectorAll('.site-header nav a')];
+  const sectionStates = new Map();
   const observer = new IntersectionObserver(entries => {
-    const active = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+    entries.forEach(entry => sectionStates.set(entry.target, entry));
+    const active = [...sectionStates.values()]
+      .filter(entry => entry.isIntersecting)
+      .sort((a,b) => b.intersectionRect.height - a.intersectionRect.height)[0];
     if (!active) return;
     navLinks.forEach(link => {
       if (link.hash === `#${active.target.id}`) link.setAttribute('aria-current', 'location');
