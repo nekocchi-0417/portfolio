@@ -63,10 +63,7 @@ h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.5; font-weight: 600; }
 .section-content > :last-child { margin-bottom: 0; }
 .role-line { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .affiliations { margin: 4px 0 20px; }
-.research-list { margin: 0; padding-left: 17px; }
-.research-list li { padding-left: 3px; margin-bottom: 12px; }
-.research-list li:last-child { margin-bottom: 0; }
-.research-list li::marker { color: var(--accent); font-size: 10px; }
+.research-note { margin: 0 0 12px; }
 .experience + .experience { margin-top: 28px; }
 .experience p { margin: 0; }
 .experience .supporting, .cohort { color: var(--muted); font-size: 15px; }
