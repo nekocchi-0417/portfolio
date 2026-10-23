@@ -74,3 +74,30 @@ footer { padding: 21px 0 35px; border-top: 1px solid var(--line); }
   section { margin-bottom: 43px; }
   footer { padding: 15px 0 25px; }
 }
+
+/* A small gallery, with originals available through native image links. */
+.project-nav { display: flex; flex-wrap: wrap; gap: 0 25px; margin-top: 20px; font-size: 14px; }
+.project-nav a, .film-link { display: inline-flex; align-items: center; min-height: 44px; }
+.project-nav a { text-decoration: none; }
+.intro .image-note { font-size: 12px; margin-top: 12px; }
+figure { margin: 0; }
+.feature-figure { margin-bottom: 26px; }
+.image-link { display: block; }
+.image-link:hover img { border-color: var(--rust); }
+figcaption { color: var(--muted); font-size: 12px; line-height: 1.6; margin-top: 9px; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px; align-items: start; margin-bottom: 22px; }
+.newsletter-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.poster-gallery { padding: 0 20px; gap: 36px; }
+.poster-gallery img { max-width: 350px; margin: 0 auto; }
+.poster-gallery figcaption { text-align: center; }
+.film-link { gap: 7px; font-size: 14px; }
+.film-link span { color: var(--rust); }
+section + section { border-top: 1px solid var(--line); padding-top: 38px; }
+@media(max-width: 600px) {
+  .gallery, .newsletter-gallery { grid-template-columns: 1fr; gap: 25px; }
+  .poster-gallery { padding: 0; }
+  .project-nav { gap: 0 21px; font-size: 13px; }
+  .intro .image-note, figcaption { font-size: 13px; }
+  .film-link { font-size: 13px; }
+  section + section { padding-top: 29px; }
+}

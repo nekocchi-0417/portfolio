@@ -17,7 +17,7 @@ Keep the homepage concise. Do not reintroduce standalone writing, courses, timel
 - Live site: https://nekocchi-0417.github.io/portfolio/
 - GitHub Pages deploys `main` from the repository root. No build step or new deployment infrastructure is needed.
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
-- `design.html` / `design.css`: visual work, currently NUS HCI Lab identity and Relive × Relove campaign.
+- `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
 - `assets/images/`: local portrait and verified visual-design assets.
 - `assets/fonts/`: self-hosted Merchant fonts.
 
@@ -29,7 +29,7 @@ Ground biographical and impact claims in the supplied résumé and application n
 
 The homepage describes Yue as from Singapore and now based in Berkeley. It links the Odyssean Institute and names the Better Futures fellowship. Track record uses the owner’s updated wording: MND research for national-level housing/retirement policies and AI-assisted scenario-planning workflows; MOH citizen research/co-design for Healthier SG (over 1 million residents enrolled); NUS faculty valedictorian (approximately 2,000-student cohort), Psychology with Sociology minor, Highest Distinction. Hobbies are sewing, reading on a Kobo, bouldering, and visual design.
 
-Verify actual image content before labeling it. Two source images previously labeled as Uncommon Minds were actually Relive × Relove workshop posters; neither is used as an Uncommon Minds example.
+Verify actual image content before labeling it. The old source labels were swapped: `nWKdkx013gH1Mzw9` and `mJIWCzT5bER84QRN` are Relive × Relove workshop posters; `XLYzWI8MRMqOt3jq` and `UxclleLNVReUgL6j` are the actual Uncommon Minds logo and brand-kit boards. The current design page uses correctly named local assets. Do not add a year to Uncommon Minds without resolving conflicting source dates. Credit the HCI newsletters and film as collaborative work with other design interns.
 
 ## Review history
 
@@ -49,3 +49,11 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Replaced the old portfolio landing page with a standalone visual-design subpage and removed all previous-portfolio links from the current flow.
 - [x] Removed the previous writing, courses, timeline, bookshelf, and expanded research sections from the homepage.
 - [x] Browser-reviewed the homepage and design subpage at desktop and phone widths; local assets, anchors, return links, and the absence of previous-portfolio links passed. GitHub Pages publishes this change from `main`.
+
+## Expanded visual examples
+
+- [x] Added three HCI newsletter designs, campaign explainers and two workshop posters, and the recovered Uncommon Minds identity/brand kit.
+- [x] Added full-size image links and project anchors while retaining short captions and a home link.
+- [x] Optimized the eight new local WebP assets to about 222 KB total; retained the originals’ aspect ratios and kept workshop posters near their native display width.
+
+- [x] Verified the expanded design gallery at desktop and phone widths: all ten images load, layout fits without horizontal overflow, and full-size asset links resolve.

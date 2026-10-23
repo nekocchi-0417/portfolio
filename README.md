@@ -5,7 +5,7 @@ A concise personal homepage with a separate visual-design page.
 - `index.html`: introduction, current work, track record, projects in progress, hobbies, and socials.
 - `personal.css`: homepage styling.
 - `personal.js`: copyright-year update.
-- `design.html` and `design.css`: two visual-design examples.
+- `design.html` and `design.css`: a visual-design gallery covering identity, newsletters, and campaign work.
 - `assets/`: local images and fonts.
 
 No build step is needed. To preview from the repository root:
