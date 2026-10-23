@@ -17,8 +17,9 @@ Keep the homepage concise. Do not reintroduce standalone writing, courses, timel
 - GitHub Pages deploys `main` from the repository root. No build step or new deployment infrastructure is needed.
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
 - `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
-- `reading.html` / `reading.css`: the seven favourite books from 2024–25 in the owner’s existing about-page content, with brief notes and verified local covers. Reuses `design.css` for base styling.
+- `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Includes brief notes and verified local covers. Reuses `design.css` for base styling.
 - `assets/images/`: local portrait and verified visual-design assets.
+- `assets/images/yue-profile.jpg`: the owner’s supplied outdoor profile photo (`20221126_161717_Original.jpg`). Preserve the supplied image; homepage CSS frames it around the face. The social-preview image uses this photo too.
 - `assets/fonts/`: self-hosted Merchant fonts.
 
 Edit text directly in the HTML. Preserve native links, semantic headings, visible focus, 44px standalone link targets, and responsive layouts. Use a local static server for browser checks. Update this file whenever committing and pushing changes.
@@ -77,3 +78,9 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Added a concise “Featured in DotGrid, Singapore Product Design’s zine (Pg 19)” reference to the Ministry of Health bullet. The zine title remains linked, with the owner’s requested page number shown immediately after it.
 - [x] Verified the public issue through the publisher’s initiatives page, https://www.productdesign.community/singapore/initiatives. Its Volume 3 link points to the public PDF at https://drive.google.com/file/d/19zQRNbIVw1d5SOHKjRikX2pg8H9No7ix/view?usp=sharing.
 - [x] The feature is “Designed to Care,” written and designed by Leonard Reese, printed pp. 16–21 of DotGrid Vol. III: Nation by Design. Yue is named and quoted about her MOH / Healthier SG work on pp. 19–20, and listed as a collaborator on p. 41. Describe this as a feature/interview, not an article authored by Yue.
+
+## Latest photo and reading additions
+
+- [x] Replaced the profile and social-preview photo with the owner’s supplied outdoor image. Homepage CSS frames the unaltered photo around the face.
+- [x] Added Skin in the Game by Nassim Nicholas Taleb and Abundance by Ezra Klein and Derek Thompson to the reading list. Keep book notes descriptive rather than inventing personal reactions or reading dates.
+- [x] Verified both new covers against publisher pages: https://www.penguinrandomhouse.com/books/537828/skin-in-the-game-by-nassim-nicholas-taleb/ and https://www.simonandschuster.com/books/Abundance/Ezra-Klein/9781668023488. Checked the new photo and nine-book list at desktop and phone widths, including cover loading and no horizontal overflow.
