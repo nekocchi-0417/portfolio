@@ -71,3 +71,9 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Moved both projects into Outside work, following the hobby sentence. The top navigation now reflects the two main sections.
 - [x] Linked “making complex ideas and ecosystems easier to see” to the nested Projects in progress block; visual design still links directly to its subpage.
 - [x] Preserved the two prototype and source-link pairs, adjusted heading levels, and checked desktop / phone layout and the internal project link.
+
+## Ministry of Health zine feature
+
+- [x] Added a concise “Featured in DotGrid, Singapore Product Design’s zine” link to the Ministry of Health bullet.
+- [x] Verified the public issue through the publisher’s initiatives page, https://www.productdesign.community/singapore/initiatives. Its Volume 3 link points to the public PDF at https://drive.google.com/file/d/19zQRNbIVw1d5SOHKjRikX2pg8H9No7ix/view?usp=sharing.
+- [x] The feature is “Designed to Care,” written and designed by Leonard Reese, printed pp. 16–21 of DotGrid Vol. III: Nation by Design. Yue is named and quoted about her MOH / Healthier SG work on pp. 19–20, and listed as a collaborator on p. 41. Describe this as a feature/interview, not an article authored by Yue.
