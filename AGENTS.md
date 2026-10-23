@@ -5,7 +5,7 @@
 The owner asked for a much simpler personal site. The homepage has two main parts:
 
 1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
-2. Outside work: a few lines about hobbies followed by the two projects in progress, with separate live-prototype and GitHub source links. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “making complex ideas and ecosystems easier to visualise” links to the projects below.
+2. Outside work: a few lines about hobbies. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “making complex ideas and ecosystems easier to visualise” links to `visualising.html`. The two projects in progress now live on that subpage, with separate live-prototype and GitHub source links.
 
 Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack, Chinese-language AI safety content on Rednote, and GitHub apps are linked naturally within a short sentence. The contact link is “Say hello at zhangyuexp@gmail.com” using mailto, replacing LinkedIn. Use “Rednote,” not 小红书, in the English UI. Hobby copy begins “I sometimes sew, boulder, and read.”
 
@@ -20,6 +20,7 @@ The owner requested more white space: keep a clear gap between the introduction,
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
 - `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
 - `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Includes brief notes and verified local covers. Reuses `design.css` for base styling.
+- `visualising.html` / `visualising.css`: the Gradual Disempowerment Dashboard and AI Governance Ecosystem prototypes, moved off the homepage at the owner’s request. Reuses `design.css` for base styling and links back to Outside work. The homepage retains `#projects` on the hobby paragraph so older fragment links still reach the new subpage link.
 - `assets/images/`: verified book-cover and visual-design assets, plus older assets used only by legacy pages.
 - The current homepage is text-only. The owner asked to remove the profile photo; do not restore a portrait or its social-preview image without a new request.
 - `assets/fonts/`: self-hosted Merchant fonts.
@@ -47,7 +48,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 ## Current work
 
-- [x] Simplified the homepage; the owner’s latest revision groups the projects under Outside work.
+- [x] Simplified the homepage; the owner’s latest revision moves the projects to a subpage linked from Outside work.
 - [x] Kept both AI projects and their prototype / GitHub destinations.
 - [x] Replaced the old portfolio landing page with a standalone visual-design subpage and removed all previous-portfolio links from the current flow.
 - [x] Removed the previous writing, courses, timeline, bookshelf, and expanded research sections from the homepage.
@@ -69,11 +70,11 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Removed the Kobo-versus-Kindle joke and linked the words “visual design” directly to `design.html`.
 - [x] Checked the reading page at desktop and phone widths: all seven covers load, no horizontal overflow, and home / reading / visual-design links work.
 
-## Projects within Outside work
+## Visualisation projects subpage
 
-- [x] Moved both projects into Outside work, following the hobby sentence. The top navigation now reflects the two main sections.
-- [x] Linked “making complex ideas and ecosystems easier to see” to the nested Projects in progress block; visual design still links directly to its subpage.
-- [x] Preserved the two prototype and source-link pairs, adjusted heading levels, and checked desktop / phone layout and the internal project link.
+- [x] Moved both projects from Outside work to `visualising.html`. The homepage phrase “making complex ideas and ecosystems easier to visualise” now links to that page.
+- [x] Preserved the two prototype and source-link pairs, the in-progress status, concise descriptions, and return-home links. No legacy UX portfolio links are introduced.
+- [x] Checked the new page at desktop, phone, and 320px widths; homepage-to-subpage navigation, return links, keyboard skip-link focus, and local references pass. The homepage no longer repeats the project details.
 
 ## Ministry of Health zine feature
 
