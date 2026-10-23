@@ -58,7 +58,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 - [x] Verified the expanded design gallery at desktop and phone widths: all ten images load, layout fits without horizontal overflow, and full-size asset links resolve.
 
-- [x] Updated the current-research paragraph to the owner’s wording on international coordination, expert reasoning, and citizen deliberation; linked gradual disempowerment to the original paper at https://arxiv.org/abs/2501.16946.
+- [x] Updated the current-research paragraph to the owner’s wording on international coordination, expert reasoning, and citizen deliberation. The owner’s latest edit removes the paper link: keep “AI-driven gradual disempowerment” as plain text.
 
 ## Reading-list subpage
 
