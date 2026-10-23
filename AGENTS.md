@@ -1,57 +1,80 @@
-# Portfolio — Zhang Yue
+# Zhang Yue personal website
 
-This is a static HTML/CSS portfolio site, built as a faithful replication of the original UXfolio portfolio at **https://uxfol.io/zhangyue**, so the owner no longer depends on the UXfolio platform.
+A concise personal site about Yue’s background, AI governance research, writing, learning, and interests. The earlier UX and service design portfolio is preserved as a design archive.
 
 ## Project overview
 
 - **Live site**: https://nekocchi-0417.github.io/portfolio/
-- **Original**: https://uxfol.io/zhangyue
-- **Host**: GitHub Pages (branch: `main`, root `/`)
-- **Stack**: Plain HTML + CSS, no build step, no JS framework
+- **Host**: GitHub Pages, branch `main`, root `/`; the personal site and archive share the existing deployment.
+- **Stack**: Plain HTML, CSS, and JavaScript. No framework, package installation, or build step.
+- **Current home**: `index.html`, styled by `personal.css` with interactions in `personal.js`.
+- **Design archive**: `design.html`, `about.html`, `skills.html`, and four case studies in `projects/`, using the existing `style.css` and `script.js`.
+- **Original archive reference**: https://uxfol.io/zhangyue
 
 ## Structure
 
-```
+```text
 portfolio/
-├── index.html                       # Landing page (hero, work experience, project grid)
-├── skills.html                      # Skills page (service design / UX research / behavioural insights)
-├── about.html                       # About page (bio, hobbies, visual design work)
-├── style.css                        # Shared stylesheet for all pages
-└── projects/
-    ├── health-programmes.html       # Case study: national health programme engagement
-    ├── policy-concept-testing.html  # Case study: scenario-based policy debate
-    ├── hotel-management.html        # Case study: hotel management app usability
-    └── future-of-work.html          # Case study: Johnson Controls innovation challenge
+├── index.html                  # Personal home: about, thinking, background, learning, off duty
+├── personal.css                # Personal site's layout, responsive styles, and visual design
+├── personal.js                 # Personal site's small interactive features
+├── assets/
+│   ├── favicon.svg
+│   ├── fonts/                  # Self-hosted Merchant font files
+│   └── images/                 # Six self-hosted personal-site images
+├── design.html                 # Earlier design portfolio landing page
+├── about.html                  # Archive bio, hobbies, and visual design work
+├── skills.html                 # Archive skills page
+├── style.css                   # Existing design archive styles
+├── script.js                   # Existing design archive interactions
+└── projects/                   # Four preserved design case studies
 ```
 
-## Design
+## Editing and content
 
-- Font: **Merchant** (Bold/Medium/Regular) self-hosted under `assets/fonts/`, plus **Open Sans** via Google Fonts
-- Palette: `--navy: #2c2669`, `--orange: #FA8006`, `--muted: #817D93`, `--bg: #F5F4FF`
-- Background: CSS radial-gradient blobs approximating the original UXfolio template background
-- All images are referenced directly from the original UXfolio S3 bucket (`uxfolio-prod.s3.us-east-1.amazonaws.com`)
+Edit personal-site text, links, course entries, research descriptions, and section order in `index.html`. Edit its appearance in `personal.css`, and its interactions in `personal.js`. Keep the site concise and distinguish ongoing research from published work. Do not publish private application notes or the supplied application PDF.
 
-## Deployment
+The home page has six self-hosted images in `assets/images/`: Yue’s portrait, bouldering photo, HCI Lab branding, and the covers of *Doing Good Better*, *Why Fish Don’t Exist*, and *The House in the Cerulean Sea*. The personal home uses local assets. The archive About page also uses these six local files; other archive images still use the original UXfolio S3 URLs.
 
-Push to `main` → GitHub Pages serves the site automatically (configured via the Pages API, no Actions workflow needed).
+Keep archive content and image layouts intact unless the owner requests an archive update. Each archive page has a slim banner returning to the personal home. Archive navigation uses “Design work” for `design.html`; the former résumé link now opens the current LinkedIn profile.
 
-The `gh` CLI binary lives at `/tmp/gh_install/` (not in PATH) and is authenticated as `nekocchi-0417`. The token has `repo` scope but **not** `workflow` scope — do not stage or push `.github/workflows/` files or the push will be rejected.
+## Local preview and deployment
 
----
+There is no build step. Open `index.html` in a browser, or serve this directory with a local static HTTP server (for example, `python3 -m http.server 8000`) and visit `http://localhost:8000/`.
+
+Push approved changes to `main`; the existing GitHub Pages deployment serves the repository root automatically. No Actions workflow is required. Do not add or replace deployment infrastructure for ordinary content or styling changes.
 
 ## Notes for future agents
 
-**Keep this TODO list updated.** When you complete an item, move it to Done. When you discover a new gap, add it here before starting work.
+- Keep TODOs and completion history honest. Update this file in the same batch as a commit and push.
+- Preserve the distinction between the current personal site and the earlier design archive.
+- Verify image content visually before changing labels or structure. Original S3 asset IDs are random hashes, and older alt text was sometimes inaccurate.
+- Check mobile and desktop layouts, internal navigation, keyboard access, and external links when changing the personal site.
 
-**Whenever you commit and push changes, update this `AGENTS.md` file in the same batch** so the remaining work, recovered assets, and completed items stay honest.
+## Current TODO
 
-**Never assume what an image shows from its filename or alt text** — S3 asset IDs are random hashes and alt text was often wrong. If something looks off, navigate directly to the S3 URL in Chrome to verify the actual image content before changing structure.
+- [x] Desktop (1280px), tablet (768px), and phone (390px) review passed; research/course disclosures, bookshelf notes, and archive return navigation were verified in the browser. Internal links and assets passed across all eight pages; no homepage console errors or broken images were observed.
+- [ ] Publish the completed personal-site update to `main`, then verify the live Pages deployment.
+- [ ] Preserve the remaining archive gaps listed below; do not imply that optional work is complete.
+
+## Current completed work
+
+- [x] Added the new personal home using `index.html`, `personal.css`, and `personal.js`.
+- [x] Preserved the earlier design portfolio in `design.html`, its supporting pages, and all four case studies.
+- [x] Added personal-site return banners and updated archive navigation and LinkedIn links.
+- [x] Self-hosted the six personal-site images, reused them on the archive About page, and kept the existing GitHub Pages deployment.
+- [x] Added GitHub and small-project links to the personal home.
+- [x] Added a compact README with editing, preview, and deployment instructions.
 
 ---
 
+# Design archive reference and history
+
+The sections below describe the preserved archive. Historical references to `index.html` mean the original portfolio homepage, now `design.html`. Its original font system uses Merchant and Open Sans, with navy `#2c2669`, orange `#FA8006`, muted `#817D93`, and pale lavender `#F5F4FF`.
+
 ## Image inventory — About page
 
-All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e041976fa9110002bbd1c9/6862a79422ffb97224f9d76b/`
+Original image source (six assets now also self-hosted locally): `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e041976fa9110002bbd1c9/6862a79422ffb97224f9d76b/`
 
 | File | What it actually shows | Where used |
 |------|------------------------|------------|
@@ -102,7 +125,7 @@ All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e04197
 
 ---
 
-## TODO
+## Design archive TODO
 
 ### Missing content (owner needs to supply or confirm)
 
@@ -111,14 +134,14 @@ All images live under: `https://uxfolio-prod.s3.us-east-1.amazonaws.com/64e04197
 
 ### Improvements / polish
 
-- [ ] **About page image carousels** — the original UXfolio used prev/next carousels for the logo redesign and newsletter image groups. These were simplified to static CSS grids. Could add a lightweight JS carousel if the owner wants it back.
-- [ ] **Self-host images** — images still point to UXfolio's S3 bucket. If UXfolio ever takes those down the image-heavy pages (about, all case studies) break. Fonts are now self-hosted; images are the larger remaining migration.
+- [ ] **Optional About page image carousels** — the original UXfolio used prev/next carousels for the logo redesign and newsletter image groups. These were simplified to static CSS grids. Could add a lightweight JS carousel if the owner wants it back.
+- [ ] **Self-host remaining archive images** — the personal site's six images are local and reused on the archive About page; other archive images still use UXfolio's S3 bucket. If UXfolio ever takes those down the image-heavy pages (about, all case studies) break. Fonts are now self-hosted; images are the larger remaining migration.
 
 ---
 
-## Done
+## Design archive completed history
 
-- [x] Full HTML/CSS replication of all pages: index, skills, about, and all 4 case studies
+- [x] Full HTML/CSS replication of all original pages: original index (now design.html), skills, about, and all 4 case studies
 - [x] Background: CSS radial-gradient replacing the original PNG background image (prevents tiling artifacts)
 - [x] Project grid: 2-column layout with full-width cards for projects 1 and 4
 - [x] Nav: fully transparent (removed opaque white background)
