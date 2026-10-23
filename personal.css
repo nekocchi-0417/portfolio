@@ -48,9 +48,9 @@ h2 { font-family: var(--serif); font-size: 32px; line-height: 1.3; letter-spacin
 .track-record { margin: 0; padding-left: 18px; }
 .track-record li { padding-left: 4px; margin-bottom: 8px; }
 .track-record li::marker { color: var(--accent); font-size: 10px; }
-.social-links { display: flex; flex-wrap: wrap; gap: 4px 25px; margin-top: 20px; font-size: 13px; }
-.social-links a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
-.social-links a span { margin-left: 5px; color: var(--accent); }
+.linked-interests { margin: 24px 0 4px; }
+.contact-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; text-decoration: none; }
+.contact-link span { margin-left: 5px; color: var(--accent); }
 .projects, .outside-work { padding: 36px 0; border-top: 1px solid var(--line); }
 .project { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px 0; }
 .project + .project { border-top: 1px solid var(--line); }
@@ -84,7 +84,6 @@ footer { padding: 20px 0 30px; border-top: 1px solid var(--line); color: var(--m
   .projects, .outside-work { padding: 28px 0; }
   h2 { font-size: 29px; }
   .small-heading { font-size: 14px; }
-  .social-links { gap: 4px 23px; }
   .outside-work a { display: inline-flex; align-items: center; min-height: 44px; }
 }
 @media(max-width: 380px) {
