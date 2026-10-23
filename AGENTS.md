@@ -5,9 +5,9 @@
 The owner asked for a much simpler personal site. The homepage has two main parts:
 
 1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
-2. Outside work: a few lines about hobbies followed by the two projects in progress, with separate live-prototype and GitHub source links. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “making complex ideas and ecosystems easier to see” links to the projects below.
+2. Outside work: a few lines about hobbies followed by the two projects in progress, with separate live-prototype and GitHub source links. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “making complex ideas and ecosystems easier to visualise” links to the projects below.
 
-Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack, Chinese-language AI safety content on Rednote, and GitHub apps are linked naturally within a short sentence; LinkedIn is the contact link. Use “Rednote,” not 小红书, in the English UI.
+Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack, Chinese-language AI safety content on Rednote, and GitHub apps are linked naturally within a short sentence. The contact link is “Say hello at zhangyuexp@gmail.com” using mailto, replacing LinkedIn. Use “Rednote,” not 小红书, in the English UI. Hobby copy begins “I sometimes sew, boulder, and read.”
 
 The owner requested more white space: keep a clear gap between the introduction, Currently, Previously, social links, and Outside work. The current layout uses 16px body text, restrained line lengths, and larger spacing between content groups. Current research is three short bullets, rather than a paragraph.
 
