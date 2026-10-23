@@ -5,13 +5,13 @@
 The owner asked for a much simpler personal site. The homepage has two main parts:
 
 1. Who Yue is, what she cares about, current research, and a brief track record (MOH, MND, and NUS valedictorian).
-2. Outside work: a few lines about hobbies. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “making complex ideas and ecosystems easier to visualise” links to `visualising.html`. The two projects in progress now live on that subpage, with separate live-prototype and GitHub source links.
+2. Outside work: a few lines about hobbies. “Read” links to the reading-list subpage, “visual design” links directly to its focused subpage, and “building small web apps” links to `apps.html`, a directory of six verified public apps.
 
-Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack, Chinese-language AI safety content on Rednote, and GitHub apps are linked naturally within a short sentence. The contact link is “Say hello at zhangyuexp@gmail.com” using mailto, replacing LinkedIn. Use “Rednote,” not 小红书, in the English UI. Hobby copy begins “I sometimes sew, boulder, and read.”
+Keep the homepage concise. Do not reintroduce standalone writing, courses, timeline, research-question accordions, bookshelves, or extra project lists unless requested. Writing on Substack and Chinese-language AI safety content on Rednote are linked naturally within a short sentence. The previous coding clause was removed to avoid duplicating the Web apps link in Outside work. The contact link is “Say hello at zhangyuexp@gmail.com” using mailto, replacing LinkedIn. Use “Rednote,” not 小红书, in the English UI. Hobby copy begins “I sometimes sew, boulder, and read.”
 
 The owner requested more white space: keep a clear gap between the introduction, Currently, Previously, social links, and Outside work. The current layout uses 16px body text, restrained line lengths, and larger spacing between content groups. Current research is three short bullets, rather than a paragraph.
 
-In the introduction, both “keeping human agency as AI becomes more capable” and “helping institutions recognise risks and act early” are bold, per the owner’s request.
+In the introduction, both “keeping human agency as AI becomes more capable” and “helping institutions recognise risks and act early” are bold. The complete “I care about…” sentence has a pale orange highlight (`#f8dfc3`), wrapping naturally across lines, in its own paragraph after the identity sentence.
 
 **Do not link to the previous UX portfolio.** `design.html` is now a new, focused visual-design page, not the old portfolio landing page. Older files (`about.html`, `skills.html`, and `projects/`) remain in the repository but are not part of the new visitor flow. Do not add links to them from current pages.
 
@@ -22,7 +22,8 @@ In the introduction, both “keeping human agency as AI becomes more capable” 
 - `index.html` / `personal.css` / `personal.js`: homepage and its minimal year update.
 - `design.html` / `design.css`: visual work across NUS HCI Lab identity/newsletters, Relive × Relove campaign/illustrations/posters, and Uncommon Minds identity/brand kit. The page shows ten verified images with full-size links plus the collaborative lab-film link.
 - `reading.html` / `reading.css`: nine books, including the seven original favourites from 2024–25 plus Skin in the Game and Abundance added by the owner. Includes brief notes and verified local covers. Reuses `design.css` for base styling.
-- `visualising.html` / `visualising.css`: the Gradual Disempowerment Dashboard and AI Governance Ecosystem prototypes, moved off the homepage at the owner’s request. Reuses `design.css` for base styling and links back to Outside work. The homepage retains `#projects` on the hobby paragraph so older fragment links still reach the new subpage link.
+- `apps.html` / `apps.css`: six public web apps, with verified demo / prototype links where available and public source links. Reuses `design.css` for base styling and links back to Outside work. The homepage retains `#projects` on the hobby paragraph so older fragment links still reach the new subpage link.
+- `visualising.html`: immediate redirect and fallback link to `apps.html`, preserving the previously published URL. Its canonical URL points to the apps page. `visualising.css` was removed.
 - `assets/images/`: verified book-cover and visual-design assets, plus older assets used only by legacy pages.
 - The current homepage is text-only. The owner asked to remove the profile photo; do not restore a portrait or its social-preview image without a new request.
 - `assets/fonts/`: self-hosted Merchant fonts.
@@ -72,11 +73,13 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Removed the Kobo-versus-Kindle joke and linked the words “visual design” directly to `design.html`.
 - [x] Checked the reading page at desktop and phone widths: all seven covers load, no horizontal overflow, and home / reading / visual-design links work.
 
-## Visualisation projects subpage
+## Web apps subpage
 
-- [x] Moved both projects from Outside work to `visualising.html`. The homepage phrase “making complex ideas and ecosystems easier to visualise” now links to that page.
-- [x] Preserved the two prototype and source-link pairs, the in-progress status, concise descriptions, and return-home links. No legacy UX portfolio links are introduced.
-- [x] Checked the new page at desktop, phone, and 320px widths; homepage-to-subpage navigation, return links, keyboard skip-link focus, and local references pass. The homepage no longer repeats the project details.
+- [x] Expanded the former two-project page into `apps.html`, linked as “building small web apps” from Outside work. The homepage no longer repeats the projects or the earlier coding phrase.
+- [x] Listed the two research projects plus HDB Housing Monetisation Guide, BookWith, Zootopia Wedding Run, and Media Monitor. Only public repositories were used; do not publish private repository details without a new explicit request.
+- [x] Verified public demo URLs for BookWith (`https://nekobookbuddy.netlify.app/`), HDB (`https://nekocchi-0417.github.io/hdb-monetisation-guide/`), and Zootopia Wedding Run (`https://nekocchi-0417.github.io/wedding_game/`). Media Monitor runs locally and has only a code link. Preserve the research projects’ in-progress status and prototype labels.
+- [x] BookWith’s name and description are grounded in its README and deployed manifest. It is based on the open-source Flow reader (`https://github.com/pacexy/flow`), credited on the app card; do not imply it was built from scratch.
+- [x] Checked the new page and homepage highlight at desktop, phone, and 320px widths; navigation, return links, keyboard skip-link focus, and the old-page redirect pass. The orange highlight retains 10.48:1 text contrast. Demo metadata / HTTP responses were checked; full external app workflows were not tested.
 
 ## Ministry of Health zine feature
 

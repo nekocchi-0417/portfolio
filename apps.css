@@ -1,0 +1,32 @@
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 40px;
+  margin: 0 0 64px;
+  padding: 0;
+  list-style: none;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.app h2 { font-size: 26px; margin: 0 0 14px; }
+.app-note { color: var(--muted); font-size: 15px; line-height: 1.75; margin: 0 0 18px; }
+.app-status, .app-credit { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.app-status { margin: 0 0 12px; }
+.app-credit { margin: -6px 0 18px; }
+.app-links { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: auto; }
+.app-links a, .github-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; }
+.app-links a { text-decoration: none; }
+.app-links .live-link, .app-links span { color: var(--rust); }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+.github-link { text-decoration: none; }
+
+@media (max-width: 650px) {
+  .app-grid { grid-template-columns: 1fr; gap: 36px; margin-bottom: 48px; }
+  .app h2 { font-size: 27px; }
+  .app-status, .app-credit { font-size: 13px; }
+}
