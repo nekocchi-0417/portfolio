@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://nekocchi-0417.github.io/portfolio/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/fonts/Merchant-Regular.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="personal.css?v=15">
+  <link rel="stylesheet" href="personal.css?v=16">
   <script src="personal.js?v=3" defer></script>
 </head>
 <body>
@@ -33,7 +33,7 @@
         <div class="intro">
           <h1 id="about-title">Hi, I’m <span>Yue.</span></h1>
           <p>I’m a policy researcher from Singapore, now based in Berkeley.</p>
-          <p class="care-statement"><mark class="purpose-highlight">I care about <strong>keeping human agency as AI becomes more capable</strong>, and <strong>helping institutions recognise risks and act early.</strong></mark></p>
+          <p class="care-statement"><mark class="purpose-highlight">I care about <strong>retaining human agency as AI becomes more capable</strong>, and <strong>making AI risks legible to the public and policymakers.</strong></mark></p>
           <div class="contact-note">
             <p>Thinking about similar questions?</p>
             <a class="contact-link" href="mailto:zhangyuexp@gmail.com">Say hello at zhangyuexp@gmail.com</a>
@@ -43,10 +43,19 @@
         <section class="info-section" aria-labelledby="current-title">
           <h2 id="current-title">Currently</h2>
           <div class="section-content">
-            <p class="role-line">Research fellow</p>
-            <p class="affiliations"><a href="https://sparai.org/projects/f26/reciOUKjBN75LBbF2/" target="_blank" rel="noopener noreferrer">SPAR</a> &amp; <a href="https://www.odysseaninstitute.org/" target="_blank" rel="noopener noreferrer">Odyssean Institute</a></p>
-            <p class="research-note">Studying international AI coordination, how experts judge AI risks, and ways to improve citizen deliberation.</p>
-            <p class="research-note">Also exploring AI-driven gradual disempowerment.</p>
+            <div class="experience-list">
+              <div class="experience">
+                <h3><a href="https://sparai.org/projects/f26/reciOUKjBN75LBbF2/" target="_blank" rel="noopener noreferrer">SPAR</a></h3>
+                <p>Research fellow</p>
+                <p class="supporting">Studying institutional models for international AI coordination.</p>
+              </div>
+              <div class="experience">
+                <h3><a href="https://www.odysseaninstitute.org/" target="_blank" rel="noopener noreferrer">Odyssean Institute</a></h3>
+                <p>Research fellow</p>
+                <p class="supporting">Studying how experts judge AI risks and ways to improve citizen deliberation.</p>
+              </div>
+            </div>
+            <p class="research-note current-interest">Also exploring AI-driven gradual disempowerment.</p>
           </div>
         </section>
 
@@ -75,9 +84,8 @@
       <section class="outside-work info-section" id="outside-work" aria-labelledby="outside-title">
         <h2 id="outside-title">Outside work</h2>
         <div class="section-content">
-          <p>I sometimes sew, boulder, and <a href="reading.html" aria-label="read my reading list">read</a>.</p>
           <p>I occasionally <a href="https://zyxai101.substack.com/" target="_blank" rel="noopener noreferrer" aria-label="write on Substack">write</a> and <a href="https://xhslink.com/m/7OPH07pDQJO" target="_blank" rel="noopener noreferrer">share AI safety ideas in Chinese on Rednote</a>.</p>
-          <p id="projects">I also enjoy visualising concepts and systems through <a href="design.html">visual design</a> and <a href="apps.html">small web apps</a>.</p>
+          <p id="projects">I also enjoy <a href="apps.html">building open-sourced tools</a> and visualising concepts and systems through <a href="design.html">visual design</a>.</p>
         </div>
       </section>
 
@@ -115,19 +123,18 @@
               <img src="assets/images/app-governance.webp" width="1120" height="700" alt="Screenshot of a map connecting governments, AI companies, researchers, and the public." loading="lazy">
             </a>
           </li>
-          <li class="quest-banner quest-reading">
+          <li class="quest-banner quest-hdb">
             <div class="quest-copy">
-              <h3>BookWith</h3>
-              <p class="quest-status">Sign-in required</p>
-              <p class="quest-note">An EPUB reading companion for discussing books with AI.</p>
-              <p class="quest-credit">Built on the open-source <a href="https://github.com/pacexy/flow" target="_blank" rel="noopener noreferrer">Flow</a> reader.</p>
+              <h3>HDB Housing Monetisation Guide</h3>
+              <p class="quest-status">Prototype</p>
+              <p class="quest-note">Comparing housing monetisation options and retirement income in Singapore.</p>
               <div class="quest-links app-links">
-                <a href="https://nekobookbuddy.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open app: BookWith, sign-in required">Open app <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/nekocchi-0417/bookcompanion" target="_blank" rel="noopener noreferrer" aria-label="GitHub source: BookWith">GitHub <span aria-hidden="true">↗</span></a>
+                <a href="https://nekocchi-0417.github.io/hdb-monetisation-guide/" target="_blank" rel="noopener noreferrer" aria-label="Try prototype: HDB Housing Monetisation Guide">Try prototype <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/nekocchi-0417/hdb-monetisation-guide" target="_blank" rel="noopener noreferrer" aria-label="GitHub source: HDB Housing Monetisation Guide">GitHub <span aria-hidden="true">↗</span></a>
               </div>
             </div>
-            <a class="quest-preview" href="https://nekobookbuddy.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open app: BookWith, sign-in required">
-              <img src="assets/images/app-reading.svg?v=2" width="640" height="400" alt="Illustration of an open book and a conversation." loading="lazy">
+            <a class="quest-preview" href="https://nekocchi-0417.github.io/hdb-monetisation-guide/" target="_blank" rel="noopener noreferrer" aria-label="Open guide: HDB Housing Monetisation Guide prototype">
+              <img src="assets/images/app-hdb.webp" width="1120" height="700" alt="Screenshot of the housing guide’s questions and overview of four housing monetisation options." loading="lazy">
             </a>
           </li>
         </ul>
