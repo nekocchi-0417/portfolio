@@ -70,34 +70,10 @@ h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.5; font-weight: 600; }
 .experience .feature-note { margin-top: 10px; color: var(--muted); font-size: 14px; }
 .outside-work .section-content p { margin-bottom: 16px; }
 .outside-work .section-content p:last-child { margin-bottom: 0; }
-.side-quests { padding: 40px 0 56px; border-top: 1px solid var(--line); }
-.side-quests-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
-.all-apps-link { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; font-size: 14px; }
-.all-apps-link span { color: var(--accent); }
-.quest-list { display: grid; gap: 22px; margin: 0; padding: 0; list-style: none; }
-.quest-banner { display: grid; grid-template-columns: 1.12fr 1fr; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: #eef0ea; }
-.quest-governance { background: #edf0f4; }
-.quest-hdb { background: #eef2f1; }
-.quest-banner:focus-within { border-color: var(--accent); }
-.quest-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 26px 28px 20px; }
-.quest-copy h3 { font-family: var(--serif); font-size: 26px; font-weight: 400; line-height: 1.2; letter-spacing: -.35px; margin: 0 0 12px; text-wrap: balance; }
-.quest-status { margin: 0 0 10px; color: var(--accent); font-size: 12px; line-height: 1.5; }
-.quest-note { margin: 0 0 16px; font-size: 15px; line-height: 1.65; }
-.quest-links { display: flex; flex-wrap: wrap; gap: 4px 22px; margin-top: auto; }
-.quest-links a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; }
-.quest-links span { color: var(--accent); }
-.quest-preview { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 220px; border-left: 1px solid var(--line); background: #f7faf8; }
-.quest-preview img { display: block; width: 100%; height: auto; }
-.quest-preview:focus-visible { outline-offset: -5px; }
-.quest-governance .quest-preview { background: #10141f; }
-.quest-hdb .quest-preview { background: #eff4f5; }
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 28px 0 44px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 @media(max-width: 650px) {
   .site-header { display: block; }
   .site-header nav { margin-top: 9px; gap: 24px; }
-  .quest-banner { grid-template-columns: minmax(0, 1fr); }
-  .quest-copy { padding: 24px 24px 18px; }
-  .quest-preview { min-height: 0; border-left: 0; border-top: 1px solid var(--line); }
 }
 @media(max-width: 700px) {
   .info-section { grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
@@ -115,11 +91,6 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
   h2 { font-size: 26px; }
   .info-section { padding: 32px 0; row-gap: 22px; }
   .experience + .experience { margin-top: 28px; }
-  .side-quests { padding: 32px 0 40px; }
-  .side-quests-heading { margin-bottom: 20px; }
-  .quest-list { gap: 24px; }
-  .quest-copy h3 { font-size: 25px; }
-  .quest-status { font-size: 13px; }
 }
 @media(max-width: 380px) {
   .site-header { display: block; }

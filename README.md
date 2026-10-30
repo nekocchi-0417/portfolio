@@ -2,7 +2,7 @@
 
 A concise personal homepage with separate reading-list, visual-design, and web-app pages.
 
-- `index.html`: introduction, separate current fellowships, track record, writing / Rednote links, and a Side quests showcase of three tools.
+- `index.html`: introduction, separate current fellowships, track record, writing / Rednote links, and an Outside work link to the three-tool directory.
 - `personal.css`: homepage styling.
 - `personal.js`: copyright-year update.
 - `design.html` and `design.css`: a visual-design gallery covering identity, newsletters, and campaign work.
