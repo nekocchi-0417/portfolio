@@ -169,3 +169,5 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Verified the four-card directory and all preview assets at desktop and phone widths, with no horizontal overflow. The BookWith destination still opens the BookBuddy sign-in page; existing three cards and return links remain intact.
 
 - [x] Changed “my Better Futures fellowship” to “the Better Futures fellowship” at the owner’s request.
+
+- [x] Added “(Singapore)” to the Ministry of National Development and Ministry of Health headings.
