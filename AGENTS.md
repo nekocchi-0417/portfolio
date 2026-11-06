@@ -159,7 +159,7 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 ## Personal research wording
 
-- [x] Kept the separate SPAR and Odyssean entries as requested, and updated the final Currently paragraph to: “Also studying AI-driven gradual disempowerment through personal projects, building on my Better Futures fellowship with the European Network for AI Safety.”
+- [x] Kept the separate SPAR and Odyssean entries as requested, and updated the final Currently paragraph to: “Also studying AI-driven gradual disempowerment through personal projects, building on the Better Futures fellowship with the European Network for AI Safety.”
 
 - [x] Linked “personal projects” in the final Currently paragraph directly to the owner’s Gradual Disempowerment Dashboard, preserving the rest of the sentence.
 
@@ -167,3 +167,5 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 
 - [x] Restored the BookWith card to the web-app directory, after HDB, with its existing book/conversation illustration, description, app and GitHub links, sign-in note, and open-source Flow attribution. The homepage remains unchanged.
 - [x] Verified the four-card directory and all preview assets at desktop and phone widths, with no horizontal overflow. The BookWith destination still opens the BookBuddy sign-in page; existing three cards and return links remain intact.
+
+- [x] Changed “my Better Futures fellowship” to “the Better Futures fellowship” at the owner’s request.
