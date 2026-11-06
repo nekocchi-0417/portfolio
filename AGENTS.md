@@ -171,3 +171,5 @@ The earlier version received an expert usability / IA review using Uxcel skills 
 - [x] Changed “my Better Futures fellowship” to “the Better Futures fellowship” at the owner’s request.
 
 - [x] Added “(Singapore)” to the Ministry of National Development and Ministry of Health headings.
+
+- [x] Expanded the NUS heading to “National University of Singapore (NUS)”.
